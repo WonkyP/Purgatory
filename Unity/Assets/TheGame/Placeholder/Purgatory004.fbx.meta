@@ -1,0 +1,270 @@
+fileFormatVersion: 2
+guid: 194f46e3347a10545bfc9809ebf71654
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Cube.004
+    100002: Cylinder.004
+    100004: Cylinder.005
+    100006: Cylinder.006
+    100008: Cylinder.007
+    100010: Door_Doors
+    100012: Door_Doors.001
+    100014: Door_Doors.002
+    100016: Door_Doors.003
+    100018: Door_Doors.005
+    100020: Door_Doors.006
+    100022: Door_Doors.007
+    100024: Door_Frame
+    100026: Door_Frame.001
+    100028: Door_Frame.002
+    100030: Door_Frame.003
+    100032: Door_Frame.005
+    100034: Door_Frame.006
+    100036: Door_Frame.007
+    100038: Door_Parent
+    100040: Door_Parent.001
+    100042: Door_Parent.002
+    100044: Door_Parent.003
+    100046: Door_Parent.005
+    100048: Door_Parent.006
+    100050: Door_Parent.007
+    100052: Door_Pillars
+    100054: Door_Pillars.001
+    100056: Door_Pillars.002
+    100058: Door_Pillars.003
+    100060: Door_Pillars.005
+    100062: Door_Pillars.006
+    100064: Door_Pillars.007
+    100066: Human
+    100068: OuterArenaWalls
+    100070: Pillar 2 offset
+    100072: Pillar 3 Offset
+    100074: Pillar center
+    100076: Pillar1_OuterWalls
+    100078: Pillar2_Large pillars
+    100080: //RootNode
+    100082: Walls
+    400000: Cube.004
+    400002: Cylinder.004
+    400004: Cylinder.005
+    400006: Cylinder.006
+    400008: Cylinder.007
+    400010: Door_Doors
+    400012: Door_Doors.001
+    400014: Door_Doors.002
+    400016: Door_Doors.003
+    400018: Door_Doors.005
+    400020: Door_Doors.006
+    400022: Door_Doors.007
+    400024: Door_Frame
+    400026: Door_Frame.001
+    400028: Door_Frame.002
+    400030: Door_Frame.003
+    400032: Door_Frame.005
+    400034: Door_Frame.006
+    400036: Door_Frame.007
+    400038: Door_Parent
+    400040: Door_Parent.001
+    400042: Door_Parent.002
+    400044: Door_Parent.003
+    400046: Door_Parent.005
+    400048: Door_Parent.006
+    400050: Door_Parent.007
+    400052: Door_Pillars
+    400054: Door_Pillars.001
+    400056: Door_Pillars.002
+    400058: Door_Pillars.003
+    400060: Door_Pillars.005
+    400062: Door_Pillars.006
+    400064: Door_Pillars.007
+    400066: Human
+    400068: OuterArenaWalls
+    400070: Pillar 2 offset
+    400072: Pillar 3 Offset
+    400074: Pillar center
+    400076: Pillar1_OuterWalls
+    400078: Pillar2_Large pillars
+    400080: //RootNode
+    400082: Walls
+    2100000: Material
+    2100002: No Name
+    2300000: Cube.004
+    2300002: Cylinder.004
+    2300004: Cylinder.005
+    2300006: Cylinder.006
+    2300008: Cylinder.007
+    2300010: Door_Doors
+    2300012: Door_Doors.001
+    2300014: Door_Doors.002
+    2300016: Door_Doors.003
+    2300018: Door_Doors.005
+    2300020: Door_Doors.006
+    2300022: Door_Doors.007
+    2300024: Door_Frame
+    2300026: Door_Frame.001
+    2300028: Door_Frame.002
+    2300030: Door_Frame.003
+    2300032: Door_Frame.005
+    2300034: Door_Frame.006
+    2300036: Door_Frame.007
+    2300038: Door_Pillars
+    2300040: Door_Pillars.001
+    2300042: Door_Pillars.002
+    2300044: Door_Pillars.003
+    2300046: Door_Pillars.005
+    2300048: Door_Pillars.006
+    2300050: Door_Pillars.007
+    2300052: Human
+    2300054: OuterArenaWalls
+    2300056: Pillar1_OuterWalls
+    2300058: Pillar2_Large pillars
+    2300060: Walls
+    3300000: Cube.004
+    3300002: Cylinder.004
+    3300004: Cylinder.005
+    3300006: Cylinder.006
+    3300008: Cylinder.007
+    3300010: Door_Doors
+    3300012: Door_Doors.001
+    3300014: Door_Doors.002
+    3300016: Door_Doors.003
+    3300018: Door_Doors.005
+    3300020: Door_Doors.006
+    3300022: Door_Doors.007
+    3300024: Door_Frame
+    3300026: Door_Frame.001
+    3300028: Door_Frame.002
+    3300030: Door_Frame.003
+    3300032: Door_Frame.005
+    3300034: Door_Frame.006
+    3300036: Door_Frame.007
+    3300038: Door_Pillars
+    3300040: Door_Pillars.001
+    3300042: Door_Pillars.002
+    3300044: Door_Pillars.003
+    3300046: Door_Pillars.005
+    3300048: Door_Pillars.006
+    3300050: Door_Pillars.007
+    3300052: Human
+    3300054: OuterArenaWalls
+    3300056: Pillar1_OuterWalls
+    3300058: Pillar2_Large pillars
+    3300060: Walls
+    4300000: Cylinder.007
+    4300002: Cylinder.006
+    4300004: Cylinder.004
+    4300006: Door_Frame.003
+    4300008: Door_Doors.003
+    4300010: Door_Pillars.003
+    4300012: Door_Pillars.007
+    4300014: Door_Doors.007
+    4300016: Door_Frame.007
+    4300018: Door_Frame.005
+    4300020: Door_Doors.005
+    4300022: Door_Pillars.005
+    4300024: Door_Frame.006
+    4300026: Door_Doors.006
+    4300028: Door_Pillars.006
+    4300030: Door_Pillars.002
+    4300032: Door_Doors.002
+    4300034: Door_Frame.002
+    4300036: Door_Frame.001
+    4300038: Door_Doors.001
+    4300040: Door_Pillars.001
+    4300042: Human
+    4300044: Door_Pillars
+    4300046: Door_Doors
+    4300048: Door_Frame
+    4300050: Cylinder.005
+    4300052: Pillar2_Large pillars
+    4300054: Cube.004
+    4300056: Pillar1_OuterWalls
+    4300058: Walls
+    4300060: OuterArenaWalls
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8106420068749274205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8106420068749274207}
+  - component: {fileID: 8106420068749274206}
+  - component: {fileID: 1016234616}
+  m_Layer: 0
+  m_Name: Inventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8106420068749274207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8106420068749274205}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.7231202, y: 0.027161114, z: -2.04588}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8106420068749274206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8106420068749274205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 826e13f76d27a6a4fac4e58ac65687d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equipment:
+    helmets:
+    - tag: SpartanHelmet
+      id: 1
+      image: {fileID: 0}
+      description: 
+      helmetStats:
+        strength: 13
+    arms:
+    - tag: 
+      id: 0
+      image: {fileID: 0}
+      description: 
+      armStats:
+        hardness: 0
+    chests: []
+    legs: []
+  attacks:
+    weaponAttacks:
+    - tag: Sure Strike
+      id: 0
+      image: {fileID: 0}
+      description: 
+      attackAnimation: Sure Strike
+      weaponAttackStats:
+        weapon_Power: 0
+    - tag: Sloppy Stab
+      id: 1
+      image: {fileID: 0}
+      description: 
+      attackAnimation: Sloppy Stab
+      weaponAttackStats:
+        weapon_Power: 0
+    - tag: Lunge
+      id: 2
+      image: {fileID: 0}
+      description: 
+      attackAnimation: Lunge
+      weaponAttackStats:
+        weapon_Power: 0
+    - tag: Firsted Uppercut
+      id: 3
+      image: {fileID: 0}
+      description: 
+      attackAnimation: Firsted Uppercut
+      weaponAttackStats:
+        weapon_Power: 0
+    - tag: Fervent Anger
+      id: 4
+      image: {fileID: 0}
+      description: 
+      attackAnimation: Fervent Anger
+      weaponAttackStats:
+        weapon_Power: 0
+    spellAttacks:
+    - tag: 
+      id: 0
+      image: {fileID: 0}
+      description: 
+      attackAnimation: 
+      spellAttackStats:
+        magic_Power: 0
+  weapons:
+    oneHandedWeapons: []
+    twoHanedWeapons: []
+--- !u!114 &1016234616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8106420068749274205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21f65ffdf4ca4ff498f486181312174a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

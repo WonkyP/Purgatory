@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c44578cca283d534991cd5701b12148f, type: 3}
+  m_Name: Inventory
+  m_EditorClassIdentifier: 
+  equipment:
+    helmets:
+    - tag: SpartanHelmet
+      id: 1
+      image: {fileID: 0}
+      description: 
+      helmetStats:
+        strength: 12
+    arms: []
+    chests: []
+    legs: []
+  attacks:
+    weaponAttacks:
+    - tag: Sure Strike
+      id: 1
+      image: {fileID: 0}
+      description: 
+      attackAnimation: Sure Strike
+      weaponAttackStats:
+        weapon_Power: 0
+    - tag: Sloppy Stab
+      id: 2
+      image: {fileID: 0}
+      description: 
+      attackAnimation: Sloppy Stab
+      weaponAttackStats:
+        weapon_Power: 0
+    - tag: Lunge
+      id: 3
+      image: {fileID: 0}
+      description: 
+      attackAnimation: Lunge
+      weaponAttackStats:
+        weapon_Power: 0
+    - tag: Fisted Uppercut
+      id: 0
+      image: {fileID: 0}
+      description: 
+      attackAnimation: Fisted Uppercut
+      weaponAttackStats:
+        weapon_Power: 0
+    - tag: Fervent Anger
+      id: 5
+      image: {fileID: 0}
+      description: 
+      attackAnimation: Fervent Anger
+      weaponAttackStats:
+        weapon_Power: 0
+    spellAttacks: []
+  weapons:
+    oneHandedWeapons: []
+    twoHanedWeapons: []
