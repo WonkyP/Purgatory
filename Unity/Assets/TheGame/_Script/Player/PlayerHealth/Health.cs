@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class Health : MonoBehaviour
 {
 
-    public RectTransform healthBar;
+    public RectTransform topHeadHealthBar;
+    public RectTransform mainHelathBar;
+
 
     public int maxHealth = 100;
     int damageReceived = 10;
@@ -33,6 +35,7 @@ public class Health : MonoBehaviour
     {
         health -= damageReceived;
 
-        healthBar.sizeDelta = new Vector2(health * 2, healthBar.sizeDelta.y);
+        topHeadHealthBar.sizeDelta = new Vector2(health * 2, topHeadHealthBar.sizeDelta.y);
+        mainHelathBar.sizeDelta = new Vector2(health * 2, topHeadHealthBar.sizeDelta.y);
     }
 }
