@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ObjectIdentifier : MonoBehaviour
 {
@@ -79,6 +80,9 @@ public class ObjectIdentifier : MonoBehaviour
             attack = inventory.InventoryExtensions.FindWeaponAttack(objectId);
             inventoryManager.updatePlayerComboSet(inventoryManager.PlayerManager.ComboSet1, attack);
         }
+
+        GetComponent<Image>().color = Color.red;
+        GetComponent<Button>().interactable = false;
     }
 
     public void WeaponSelected()

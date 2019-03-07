@@ -317,11 +317,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8106420068749274205, guid: 4b07725b817864d47a1d24e05e98c66d,
-        type: 3}
-      propertyPath: m_Name
-      value: Player1Inventory
-      objectReference: {fileID: 0}
     - target: {fileID: 8106420068749274206, guid: 4b07725b817864d47a1d24e05e98c66d,
         type: 3}
       propertyPath: attacks.weaponAttacks.Array.size
@@ -371,6 +366,11 @@ PrefabInstance:
         type: 3}
       propertyPath: attacks.weaponAttacks.Array.data[2].attackAnimation
       value: Attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 8106420068749274205, guid: 4b07725b817864d47a1d24e05e98c66d,
+        type: 3}
+      propertyPath: m_Name
+      value: Player1Inventory
       objectReference: {fileID: 0}
     - target: {fileID: 8106420068749274207, guid: 4b07725b817864d47a1d24e05e98c66d,
         type: 3}
@@ -637,16 +637,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1122664355815791464, guid: c08ffe69f9bd79e4f8456349e89cb745,
-        type: 3}
-      propertyPath: m_Name
-      value: Player1InventoryManager
-      objectReference: {fileID: 0}
     - target: {fileID: 1122664355815791463, guid: c08ffe69f9bd79e4f8456349e89cb745,
         type: 3}
       propertyPath: playerManager
       value: 
       objectReference: {fileID: 1785436919}
+    - target: {fileID: 1122664355815791464, guid: c08ffe69f9bd79e4f8456349e89cb745,
+        type: 3}
+      propertyPath: m_Name
+      value: Player1InventoryManager
+      objectReference: {fileID: 0}
     - target: {fileID: 1122664355815791462, guid: c08ffe69f9bd79e4f8456349e89cb745,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1178,6 +1178,18 @@ PrefabInstance:
     - target: {fileID: 1021794317, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AttackSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021794318, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021794318, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021794318, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
