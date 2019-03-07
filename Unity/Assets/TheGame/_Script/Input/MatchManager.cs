@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class MatchManager : MonoBehaviour {
     
-    //Cameras for each player
-    public Camera cam1;
-    public Camera cam2;
-    public Camera cam3;
-    public Camera cam4;
+    ////Cameras for each player
+    //public Camera cam1;
+    //public Camera cam2;
+    //public Camera cam3;
+    //public Camera cam4;
 
     //Original positions of the players
     public GameObject player1;
     public GameObject player2;
-    public GameObject spawn3;
-    public GameObject spawn4;
+    //public GameObject spawn3;
+    //public GameObject spawn4;
 
     //Object with the controller of the player, for example, cars, characters or whatever
     public GameObject[] characters;

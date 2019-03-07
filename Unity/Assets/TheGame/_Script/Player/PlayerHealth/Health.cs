@@ -9,7 +9,6 @@ public class Health : MonoBehaviour
     public RectTransform topHeadHealthBar;
     public RectTransform mainHelathBar;
 
-
     public int maxHealth = 100;
     int damageReceived = 10;
     int health;
