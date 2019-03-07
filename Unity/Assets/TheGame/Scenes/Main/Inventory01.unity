@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -542,6 +542,36 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 19212414}
+    - target: {fileID: 7366008584362894557, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.26622996
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366008584362894557, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366008584362894557, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366008584362894557, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.9844005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366008584362894557, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366008584362894557, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a3546d309b9c4c4bad0974e6ecce0ff, type: 3}
 --- !u!1001 &7521837355946460349
@@ -559,7 +589,7 @@ PrefabInstance:
     - target: {fileID: 446612633720356882, guid: 1697b8ca5501cf44b857858c05ae4bbd,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7209893494507259078, guid: 1697b8ca5501cf44b857858c05ae4bbd,
         type: 3}
@@ -671,5 +701,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 504460497}
+    - target: {fileID: 8510312422600813678, guid: 1697b8ca5501cf44b857858c05ae4bbd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1697b8ca5501cf44b857858c05ae4bbd, type: 3}

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ObjectIdentifier : MonoBehaviour
 {
+    // Enums
     public enum TypeOfInventoryItems { Equipment, Attacks, Weapons }
     public enum TypeOfItem { Helmets, Arms, Chests, Legs, WeaponAttacks, SpellAttacks, OneHandedWeapons, TwoHandedWeapons }
     private enum ItemState { Selected, Deselected }
@@ -17,12 +18,21 @@ public class ObjectIdentifier : MonoBehaviour
     private TypeOfItem item;
     public TypeOfItem Item { get { return this.item; } }
 
+    // To know if the object has been selected or not
     private ItemState itemState = ItemState.Deselected;
 
     [SerializeField]
     private int objectId;
     public int ObjectId { get { return this.objectId; } }
 
+    // I need it public to let the script know I'm referring to that specific inventory
+    [SerializeField]
+    private Inventory inventory;
+
+    [SerializeField]
+    private InventoryManager inventoryManager;
+
+    // Items
     string itemType;
     
     Helmet helmet;
@@ -38,15 +48,6 @@ public class ObjectIdentifier : MonoBehaviour
     OneHandedWeapon oneHandedWeapon;
 
     TwoHandedWeapon twoHandedWeapon;
-
-
-    // I need it public to let the script know I'm referring to that specific inventory
-    [SerializeField]
-    private Inventory inventory;
-
-    [SerializeField]
-    private InventoryManager inventoryManager;
-
 
     public void EquipmentSelected()
     {

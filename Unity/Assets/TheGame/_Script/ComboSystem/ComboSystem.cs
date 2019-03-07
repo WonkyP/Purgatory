@@ -18,7 +18,7 @@ public class ComboSystem : MonoBehaviour
     {
         if (comboSet.Count < 5)
         {
-            attack.ComboNumber = comboSet.Count;
+            //attack.ComboNumber = comboSet.Count;
             comboSet.Enqueue(attack);
         }
         
@@ -28,10 +28,9 @@ public class ComboSystem : MonoBehaviour
     {
         Weapon_Attack a = findAttack(comboSet, attackId);
         comboSet.Dequeue();
-        a = playerManager_.DefaulWeaponAttack;
-        comboSet.Enqueue(a);
+        //a = playerManager_.DefaulWeaponAttack;
+        //comboSet.Enqueue(a);
 
-        restartCombo(comboSet);
     }
 
     private Weapon_Attack findAttack(Queue<Weapon_Attack> comboSet, int attackId)
@@ -73,4 +72,19 @@ public class ComboSystem : MonoBehaviour
         }
     }
 
+    public void setComboOrder(Queue<Weapon_Attack> comboSet)
+    {
+        int i = 0;
+        Weapon_Attack attack;
+
+        while (i < comboSet.Count)
+        {
+            attack = comboSet.Dequeue();
+            attack.ComboNumber = i;
+            comboSet.Enqueue(attack);
+
+            i++;
+        }
+
+    }
 }
