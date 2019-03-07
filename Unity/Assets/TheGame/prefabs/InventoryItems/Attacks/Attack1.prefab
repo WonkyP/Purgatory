@@ -197,7 +197,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1021794316}
-        m_MethodName: ItemSelected
+        m_MethodName: AttackSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -224,7 +224,5 @@ MonoBehaviour:
   inventoryItem: 1
   item: 4
   objectId: 1
-  inventory: {fileID: 8106420068749274206, guid: 4b07725b817864d47a1d24e05e98c66d,
-    type: 3}
-  inventoryManager: {fileID: 1122664355815791463, guid: c08ffe69f9bd79e4f8456349e89cb745,
-    type: 3}
+  inventory: {fileID: 0}
+  inventoryManager: {fileID: 0}
