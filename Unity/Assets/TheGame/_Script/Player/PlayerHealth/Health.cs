@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class Health : MonoBehaviour
 {
 
+    private PlayerManager playerManager;
+
     public RectTransform topHeadHealthBar;
     public RectTransform mainHelathBar;
 
@@ -17,6 +19,7 @@ public class Health : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerManager = GetComponent<PlayerManager>();
         health = maxHealth;
     }
 
@@ -39,5 +42,8 @@ public class Health : MonoBehaviour
 
         topHeadHealthBar.sizeDelta = new Vector2(health * 2, topHeadHealthBar.sizeDelta.y);
         mainHelathBar.sizeDelta = new Vector2(health * 2, topHeadHealthBar.sizeDelta.y);
+
+        GameManager.instance.takeDamage(health, playerManager.Player_id);
+
     }
 }
