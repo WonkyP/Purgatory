@@ -191,40 +191,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 102377039757330690}
     m_Modifications:
-    - target: {fileID: 9042541803799483440, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+    - target: {fileID: 2931277917921032764, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
-      propertyPath: m_NormalizedViewPortRect.height
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9042541803799483440, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+      propertyPath: topHeadHealthBar
+      value: 
+      objectReference: {fileID: 222096405840513988}
+    - target: {fileID: 2931277917921032764, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
-      propertyPath: m_CullingMask.m_Bits
-      value: 823
-      objectReference: {fileID: 0}
-    - target: {fileID: 5164974674314753076, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+      propertyPath: mainHelathBar
+      value: 
+      objectReference: {fileID: 4591936523492902160}
+    - target: {fileID: 1474879975583442488, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5164974674314753076, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5164974674314753076, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.000022888184
-      objectReference: {fileID: 0}
-    - target: {fileID: 5164974674314753076, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.000014901161
-      objectReference: {fileID: 0}
-    - target: {fileID: 5164974674314753076, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 1
+      propertyPath: m_Name
+      value: Player2System
       objectReference: {fileID: 0}
     - target: {fileID: 6512038009061035647, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
@@ -281,11 +261,43 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1474879975583442488, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+    - target: {fileID: 9042541803799483440, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
-      propertyPath: m_Name
-      value: Player2System
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9042541803799483440, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 823
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042541803799483442, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 8949710172168682519}
+    - target: {fileID: 9042541803799483442, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: pivot
+      value: 
+      objectReference: {fileID: 4162778806581818419}
+    - target: {fileID: 6567225406638782823, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 692311830, guid: 4936fc5338b1e2a47a6ac97770b10fa8, type: 3}
+      propertyPath: cameraT
+      value: 
+      objectReference: {fileID: 8949710172168682519}
+    - target: {fileID: 692311831, guid: 4936fc5338b1e2a47a6ac97770b10fa8, type: 3}
+      propertyPath: topHeadHealthBar
+      value: 
+      objectReference: {fileID: 222096405840513988}
+    - target: {fileID: 692311831, guid: 4936fc5338b1e2a47a6ac97770b10fa8, type: 3}
+      propertyPath: mainHelathBar
+      value: 
+      objectReference: {fileID: 4591936523492902160}
     - target: {fileID: 1166514417770565127, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
       propertyPath: playerManager
@@ -301,20 +313,11 @@ PrefabInstance:
       propertyPath: testingWithXboxController
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 9042541803799483442, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+    - target: {fileID: 5091658546745713057, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 8949710172168682519}
-    - target: {fileID: 9042541803799483442, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: pivot
-      value: 
-      objectReference: {fileID: 4162778806581818419}
-    - target: {fileID: 692311830, guid: 4936fc5338b1e2a47a6ac97770b10fa8, type: 3}
-      propertyPath: cameraT
-      value: 
-      objectReference: {fileID: 8949710172168682519}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5045175340767044162, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
       propertyPath: m_Bones.Array.data[0]
@@ -740,29 +743,36 @@ PrefabInstance:
       propertyPath: m_RootBone
       value: 
       objectReference: {fileID: 197233304276389174}
-    - target: {fileID: 692311831, guid: 4936fc5338b1e2a47a6ac97770b10fa8, type: 3}
-      propertyPath: topHeadHealthBar
-      value: 
-      objectReference: {fileID: 222096405840513988}
-    - target: {fileID: 692311831, guid: 4936fc5338b1e2a47a6ac97770b10fa8, type: 3}
-      propertyPath: mainHelathBar
-      value: 
-      objectReference: {fileID: 4591936523492902160}
-    - target: {fileID: 6567225406638782823, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+    - target: {fileID: 5164974674314753076, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
-      propertyPath: m_Layer
-      value: 10
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5164974674314753076, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5164974674314753076, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000022888184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5164974674314753076, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000014901161
+      objectReference: {fileID: 0}
+    - target: {fileID: 5164974674314753076, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8703211156338765025, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
       propertyPath: enemyPlayerCamera
       value: 
       objectReference: {fileID: 94098574986543868}
-    - target: {fileID: 5091658546745713057, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 4184411185813584477, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
       propertyPath: m_Layer
@@ -1323,35 +1333,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 102377039757330690}
     m_Modifications:
-    - target: {fileID: 9042541803799483440, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+    - target: {fileID: 2931277917921032764, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
-      propertyPath: m_NormalizedViewPortRect.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9042541803799483440, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+      propertyPath: topHeadHealthBar
+      value: 
+      objectReference: {fileID: 4295990813911704312}
+    - target: {fileID: 2931277917921032764, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
-      propertyPath: m_NormalizedViewPortRect.height
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5164974674314753076, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+      propertyPath: mainHelathBar
+      value: 
+      objectReference: {fileID: 8944747155823632390}
+    - target: {fileID: 1474879975583442488, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5164974674314753076, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5164974674314753076, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.000014901161
-      objectReference: {fileID: 0}
-    - target: {fileID: 5164974674314753076, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 1
+      propertyPath: m_Name
+      value: Player1System
       objectReference: {fileID: 0}
     - target: {fileID: 6512038009061035647, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
@@ -1408,16 +1403,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1474879975583442488, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+    - target: {fileID: 9042541803799483440, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
-      propertyPath: m_Name
-      value: Player1System
+      propertyPath: m_NormalizedViewPortRect.y
+      value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1166514417770565127, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+    - target: {fileID: 9042541803799483440, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
-      propertyPath: playerManager
-      value: 
-      objectReference: {fileID: 3533607542098206283}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 9042541803799483442, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
       propertyPath: target
@@ -1428,10 +1423,33 @@ PrefabInstance:
       propertyPath: pivot
       value: 
       objectReference: {fileID: 94098574204919055}
+    - target: {fileID: 6567225406638782823, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 692311830, guid: 4936fc5338b1e2a47a6ac97770b10fa8, type: 3}
       propertyPath: cameraT
       value: 
       objectReference: {fileID: 4951890964531631403}
+    - target: {fileID: 692311831, guid: 4936fc5338b1e2a47a6ac97770b10fa8, type: 3}
+      propertyPath: topHeadHealthBar
+      value: 
+      objectReference: {fileID: 4295990813911704312}
+    - target: {fileID: 692311831, guid: 4936fc5338b1e2a47a6ac97770b10fa8, type: 3}
+      propertyPath: mainHelathBar
+      value: 
+      objectReference: {fileID: 8944747155823632390}
+    - target: {fileID: 1166514417770565127, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: playerManager
+      value: 
+      objectReference: {fileID: 3533607542098206283}
+    - target: {fileID: 5091658546745713057, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5045175340767044162, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
       propertyPath: m_Bones.Array.data[0]
@@ -1857,29 +1875,31 @@ PrefabInstance:
       propertyPath: m_RootBone
       value: 
       objectReference: {fileID: 4195052227775882250}
-    - target: {fileID: 692311831, guid: 4936fc5338b1e2a47a6ac97770b10fa8, type: 3}
-      propertyPath: topHeadHealthBar
-      value: 
-      objectReference: {fileID: 4295990813911704312}
-    - target: {fileID: 692311831, guid: 4936fc5338b1e2a47a6ac97770b10fa8, type: 3}
-      propertyPath: mainHelathBar
-      value: 
-      objectReference: {fileID: 8944747155823632390}
-    - target: {fileID: 6567225406638782823, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+    - target: {fileID: 5164974674314753076, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
-      propertyPath: m_Layer
-      value: 9
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5164974674314753076, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5164974674314753076, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000014901161
+      objectReference: {fileID: 0}
+    - target: {fileID: 5164974674314753076, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8703211156338765025, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
       propertyPath: enemyPlayerCamera
       value: 
       objectReference: {fileID: 4162778805603019712}
-    - target: {fileID: 5091658546745713057, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 4184411185813584477, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
       propertyPath: m_Layer

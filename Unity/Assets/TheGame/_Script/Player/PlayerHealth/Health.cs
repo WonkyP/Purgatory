@@ -24,14 +24,17 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //Testung
         if (damaged)
         {
-            takeDamage();
+            takeDamage(10);
             damaged = !damaged;
         }
+        ///////////////
     }
 
-    public void takeDamage()
+    public void takeDamage(int damageReceived)
     {
         health -= damageReceived;
 

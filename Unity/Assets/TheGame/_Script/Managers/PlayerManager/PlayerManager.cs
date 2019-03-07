@@ -83,6 +83,11 @@ public class PlayerManager : MonoBehaviour
     private int playerSpeed;
     public float PlayerSpeed { get { return this.playerSpeed; } }
 
+
+
+    private Health healthScript;
+    public Health HealthScript { get { return this.healthScript; } }
+
     private void Start()
     {
         CreatePlayerInventory();
@@ -96,6 +101,8 @@ public class PlayerManager : MonoBehaviour
         comboSystem.addAttackToCombo(comboSet2, atk1_2);
         comboSystem.addAttackToCombo(comboSet2, atk2_2);
         comboSystem.addAttackToCombo(comboSet2, atk3_2);
+
+        healthScript = GetComponent<Health>();
     }
 
     private void CreatePlayerInventory()
