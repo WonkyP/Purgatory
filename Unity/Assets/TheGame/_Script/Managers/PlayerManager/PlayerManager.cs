@@ -21,6 +21,20 @@ public class PlayerManager : MonoBehaviour
     private Player player;
     public Player Player { get { return this.player; } }
 
+    [SerializeField]
+    [Range(1.0f, 20.0f)]
+    private int dashDistance;
+    public float DashDistance { get { return this.dashDistance; } }
+
+    [SerializeField]
+    [Range(1.0f, 20.0f)]
+    private int playerSpeed;
+    public float PlayerSpeed { get { return this.playerSpeed; } }
+
+    private Health healthScript;
+    public Health HealthScript { get { return this.healthScript; } }
+
+    
     // NEW PLAYERMANAGER STORING SYSTEM
 
     // A default value for the weapon attack empty slots
@@ -51,11 +65,22 @@ public class PlayerManager : MonoBehaviour
     private TwoHandedWeapon currentTwoHandedWeapon;
     public TwoHandedWeapon CurrentTwoHandedWeapon { get { return this.currentTwoHandedWeapon; } set { this.currentTwoHandedWeapon = value; } }
 
-    // A queue with the first combo set the player can perform
+    // Current combos
+    // A list with the first combo the player can perform
+    [SerializeField]
+    private List<Weapon_Attack> currentComboSet1 = new List<Weapon_Attack>();
+    public List<Weapon_Attack> CurrentComboSet1 { get { return this.currentComboSet1; } }
+
+    // A list with the second combo the player can perform
+    private List<Weapon_Attack> currentComboSet2 = new List<Weapon_Attack>();
+    public List<Weapon_Attack> CurrentComboSet2 { get { return this.currentComboSet2; } }
+
+    // Queues with the attacks in the game
+    // A queue with the first combo the player can perform
     private Queue<Weapon_Attack> comboSet1 = new Queue<Weapon_Attack>();
     public Queue<Weapon_Attack> ComboSet1 { get { return this.comboSet1; } }
 
-    // A queue with the second combo set the player can perform
+    // A queue with the second combo the player can perform
     private Queue<Weapon_Attack> comboSet2 = new Queue<Weapon_Attack>();
     public Queue<Weapon_Attack> ComboSet2 { get { return this.comboSet2; } }
 
@@ -77,34 +102,22 @@ public class PlayerManager : MonoBehaviour
     Weapon_Attack atk3_2 = new Weapon_Attack("Attack 3_Combo3", 3, "Attack");
     //------------------------------------------------------
 
-    [SerializeField]
-    [Range(1.0f, 20.0f)]
-    private int dashDistance;
-    public float DashDistance { get { return this.dashDistance; } }
-
-    [SerializeField]
-    [Range(1.0f, 20.0f)]
-    private int playerSpeed;
-    public float PlayerSpeed { get { return this.playerSpeed; } }
-
-
-
-    private Health healthScript;
-    public Health HealthScript { get { return this.healthScript; } }
-
     private void Start()
     {
         CreatePlayerInventory();
 
-        //comboSystem.addAttackToCombo(comboSet1, atk1_1);
-        //comboSystem.addAttackToCombo(comboSet1, atk2_1);
-        //comboSystem.addAttackToCombo(comboSet1, atk3_1);
-        //comboSystem.addAttackToCombo(comboSet1, atk4_1);
-        //comboSystem.addAttackToCombo(comboSet1, atk5_1);
+        comboSystem.addAttackToCombo(CurrentComboSet1, atk1_1);
+        comboSystem.addAttackToCombo(CurrentComboSet1, atk2_1);
+        comboSystem.addAttackToCombo(CurrentComboSet1, atk3_1);
+        comboSystem.addAttackToCombo(CurrentComboSet1, atk4_1);
+        comboSystem.addAttackToCombo(CurrentComboSet1, atk5_1);
 
-        comboSystem.addAttackToCombo(comboSet2, atk1_2);
-        comboSystem.addAttackToCombo(comboSet2, atk2_2);
-        comboSystem.addAttackToCombo(comboSet2, atk3_2);
+        comboSystem.addAttackToCombo(currentComboSet2, atk1_2);
+        comboSystem.addAttackToCombo(currentComboSet2, atk2_2);
+        comboSystem.addAttackToCombo(currentComboSet2, atk3_2);
+
+        ComboSystem.createComboQueue(CurrentComboSet1, comboSet1);
+        ComboSystem.createComboQueue(CurrentComboSet2, comboSet2);
 
         healthScript = GetComponent<Health>();
     }

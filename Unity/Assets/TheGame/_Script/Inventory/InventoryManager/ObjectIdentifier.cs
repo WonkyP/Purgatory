@@ -79,12 +79,14 @@ public class ObjectIdentifier : MonoBehaviour
     {
         itemType = item.ToString();
 
+        attack = inventory.InventoryExtensions.FindWeaponAttack(objectId);
+
         if (itemState == ItemState.Deselected)
         {
             if (itemType == TypeOfItem.WeaponAttacks.ToString())
             {
-                attack = inventory.InventoryExtensions.FindWeaponAttack(objectId);
-                inventoryManager.updatePlayerComboSet(inventoryManager.PlayerManager.ComboSet1, attack);
+                //attack = inventory.InventoryExtensions.FindWeaponAttack(objectId);
+                inventoryManager.updatePlayerComboSet(inventoryManager.PlayerManager.CurrentComboSet1, attack);
             }
 
             itemState = ItemState.Selected;
@@ -93,7 +95,7 @@ public class ObjectIdentifier : MonoBehaviour
         }
         else
         {
-            inventoryManager.PlayerManager.ComboSystem.removeAttackFromCombo(inventoryManager.PlayerManager.ComboSet1, objectId);
+            inventoryManager.PlayerManager.ComboSystem.removeAttackFromCombo(inventoryManager.PlayerManager.CurrentComboSet1, attack);
             itemState = ItemState.Deselected;
 
             GetComponent<Image>().color = Color.white;

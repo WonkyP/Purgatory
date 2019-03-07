@@ -5,49 +5,43 @@ using UnityEngine;
 public class ComboSystem : MonoBehaviour
 {
     private PlayerManager playerManager_;
+
+    [SerializeField]
     private Animator animator_;
     
 
     private void Start()
     {
         playerManager_ = GetComponent<PlayerManager>();
-        animator_ = GetComponent<Animator>();
     }
 
-    public void addAttackToCombo(Queue<Weapon_Attack> comboSet, Weapon_Attack attack)
+    // InventoryMethods
+    public void addAttackToCombo(List<Weapon_Attack> currentComboSet, Weapon_Attack attack)
     {
-        if (comboSet.Count < 5)
+        if (currentComboSet.Count < 5)
         {
             //attack.ComboNumber = comboSet.Count;
-            comboSet.Enqueue(attack);
+            currentComboSet.Add(attack);
         }
-        
     }
 
-    public void removeAttackFromCombo(Queue<Weapon_Attack> comboSet, int attackId)
+    public void removeAttackFromCombo(List<Weapon_Attack> currentComboSet, Weapon_Attack attack)
     {
-        Weapon_Attack a = findAttack(comboSet, attackId);
-        comboSet.Dequeue();
-        //a = playerManager_.DefaulWeaponAttack;
-        //comboSet.Enqueue(a);
-
+        currentComboSet.Remove(attack);
     }
 
-    private Weapon_Attack findAttack(Queue<Weapon_Attack> comboSet, int attackId)
+    public void createComboQueue(List<Weapon_Attack> currentComboSet, Queue<Weapon_Attack> comboSet)
     {
         Weapon_Attack attack;
-
-        while (comboSet.Peek().Id != attackId)
+        for (int i = 0; i < currentComboSet.Count; i++)
         {
-            attack = comboSet.Dequeue();
+            attack = currentComboSet[i];
+            attack.ComboNumber = i;
             comboSet.Enqueue(attack);
         }
-
-        attack = comboSet.Peek();
-
-        return attack;
     }
 
+    // Methods in-game
     public void executeComboSet(Queue<Weapon_Attack> comboSet)
     {
         Weapon_Attack comboAttack = comboSet.Dequeue();
@@ -72,19 +66,4 @@ public class ComboSystem : MonoBehaviour
         }
     }
 
-    public void setComboOrder(Queue<Weapon_Attack> comboSet)
-    {
-        int i = 0;
-        Weapon_Attack attack;
-
-        while (i < comboSet.Count)
-        {
-            attack = comboSet.Dequeue();
-            attack.ComboNumber = i;
-            comboSet.Enqueue(attack);
-
-            i++;
-        }
-
-    }
 }

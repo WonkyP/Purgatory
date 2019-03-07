@@ -12,8 +12,6 @@ public class InventoryManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Y))
-            Debug.Log(playerManager.ComboSet1.Dequeue().Tag);
             
     }
 
@@ -54,8 +52,8 @@ public class InventoryManager : MonoBehaviour
     }
 
     // Method to add one attack to a comboSet
-    public void updatePlayerComboSet(Queue<Weapon_Attack> comboSet, Weapon_Attack a)
+    public void updatePlayerComboSet(List<Weapon_Attack> currentComboSet, Weapon_Attack a)
     {
-        playerManager.ComboSystem.addAttackToCombo(comboSet, a);
+        playerManager.ComboSystem.addAttackToCombo(currentComboSet, a);
     }
 }
