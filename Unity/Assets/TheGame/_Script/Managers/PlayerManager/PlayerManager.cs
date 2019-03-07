@@ -23,6 +23,10 @@ public class PlayerManager : MonoBehaviour
 
     // NEW PLAYERMANAGER STORING SYSTEM
 
+    // A default value for the weapon attack empty slots
+    private Weapon_Attack defaulWeaponAttack = new Weapon_Attack("Default", -1, "Default");
+    public Weapon_Attack DefaulWeaponAttack { get { return this.defaulWeaponAttack; } }
+
     // Current helmet
     private Helmet currentHelmet;
     public Helmet CurrentHelmet { get { return this.currentHelmet; } set { this.currentHelmet = value; } }

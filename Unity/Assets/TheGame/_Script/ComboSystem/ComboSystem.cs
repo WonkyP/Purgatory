@@ -24,9 +24,29 @@ public class ComboSystem : MonoBehaviour
         
     }
 
-    public void removeAttackFromCombo(Queue<Weapon_Attack> comboSet)
+    public void removeAttackFromCombo(Queue<Weapon_Attack> comboSet, int attackId)
     {
+        Weapon_Attack a = findAttack(comboSet, attackId);
         comboSet.Dequeue();
+        a = playerManager_.DefaulWeaponAttack;
+        comboSet.Enqueue(a);
+
+        restartCombo(comboSet);
+    }
+
+    private Weapon_Attack findAttack(Queue<Weapon_Attack> comboSet, int attackId)
+    {
+        Weapon_Attack attack;
+
+        while (comboSet.Peek().Id != attackId)
+        {
+            attack = comboSet.Dequeue();
+            comboSet.Enqueue(attack);
+        }
+
+        attack = comboSet.Peek();
+
+        return attack;
     }
 
     public void executeComboSet(Queue<Weapon_Attack> comboSet)

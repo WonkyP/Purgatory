@@ -296,11 +296,20 @@ PrefabInstance:
       objectReference: {fileID: 876171798}
     - target: {fileID: 169918809, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: m_Text
-      value: Attack 2
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1021794317, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AttackSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021794318, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 157e66bc9fba7a74cb9b7e27412a1c0f,
+        type: 3}
+    - target: {fileID: 1021794318, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
+      propertyPath: m_Type
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
@@ -330,12 +339,12 @@ PrefabInstance:
     - target: {fileID: 8106420068749274206, guid: 4b07725b817864d47a1d24e05e98c66d,
         type: 3}
       propertyPath: attacks.weaponAttacks.Array.data[0].tag
-      value: AttackSword_1
+      value: Crackling Sweep
       objectReference: {fileID: 0}
     - target: {fileID: 8106420068749274206, guid: 4b07725b817864d47a1d24e05e98c66d,
         type: 3}
       propertyPath: attacks.weaponAttacks.Array.data[1].tag
-      value: AttackSword2
+      value: Fervent Anger
       objectReference: {fileID: 0}
     - target: {fileID: 8106420068749274206, guid: 4b07725b817864d47a1d24e05e98c66d,
         type: 3}
@@ -345,7 +354,7 @@ PrefabInstance:
     - target: {fileID: 8106420068749274206, guid: 4b07725b817864d47a1d24e05e98c66d,
         type: 3}
       propertyPath: attacks.weaponAttacks.Array.data[2].tag
-      value: AttackSword3
+      value: Sure Strike
       objectReference: {fileID: 0}
     - target: {fileID: 8106420068749274206, guid: 4b07725b817864d47a1d24e05e98c66d,
         type: 3}
@@ -538,11 +547,20 @@ PrefabInstance:
       objectReference: {fileID: 876171798}
     - target: {fileID: 169918809, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: m_Text
-      value: Attack 3
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1021794317, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AttackSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021794318, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 354d9b588e3ea144684da3f7da7c7679,
+        type: 3}
+    - target: {fileID: 1021794318, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
+      propertyPath: m_Type
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
@@ -1175,5 +1193,21 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 876171798}
+    - target: {fileID: 1021794318, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021794318, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021794318, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021794318, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
+      propertyPath: m_Color.a
+      value: 0.89411765
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}

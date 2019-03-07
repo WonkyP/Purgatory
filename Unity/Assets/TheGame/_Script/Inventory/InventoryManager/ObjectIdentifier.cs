@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class ObjectIdentifier : MonoBehaviour
 {
-    public enum TypeOfInventoryItems { Equipment, Attacks, Weapons}
+    public enum TypeOfInventoryItems { Equipment, Attacks, Weapons }
     public enum TypeOfItem { Helmets, Arms, Chests, Legs, WeaponAttacks, SpellAttacks, OneHandedWeapons, TwoHandedWeapons }
+    private enum ItemState { Selected, Deselected }
 
     [SerializeField]
     private TypeOfInventoryItems inventoryItem;
@@ -15,6 +16,8 @@ public class ObjectIdentifier : MonoBehaviour
     [SerializeField]
     private TypeOfItem item;
     public TypeOfItem Item { get { return this.item; } }
+
+    private ItemState itemState = ItemState.Deselected;
 
     [SerializeField]
     private int objectId;
@@ -75,14 +78,26 @@ public class ObjectIdentifier : MonoBehaviour
     {
         itemType = item.ToString();
 
-        if (itemType == TypeOfItem.WeaponAttacks.ToString())
+        if (itemState == ItemState.Deselected)
         {
-            attack = inventory.InventoryExtensions.FindWeaponAttack(objectId);
-            inventoryManager.updatePlayerComboSet(inventoryManager.PlayerManager.ComboSet1, attack);
-        }
+            if (itemType == TypeOfItem.WeaponAttacks.ToString())
+            {
+                attack = inventory.InventoryExtensions.FindWeaponAttack(objectId);
+                inventoryManager.updatePlayerComboSet(inventoryManager.PlayerManager.ComboSet1, attack);
+            }
 
-        GetComponent<Image>().color = Color.red;
-        GetComponent<Button>().interactable = false;
+            itemState = ItemState.Selected;
+
+            GetComponent<Image>().color = Color.magenta;
+        }
+        else
+        {
+            inventoryManager.PlayerManager.ComboSystem.removeAttackFromCombo(inventoryManager.PlayerManager.ComboSet1, objectId);
+            itemState = ItemState.Deselected;
+
+            GetComponent<Image>().color = Color.white;
+        }
+  
     }
 
     public void WeaponSelected()
