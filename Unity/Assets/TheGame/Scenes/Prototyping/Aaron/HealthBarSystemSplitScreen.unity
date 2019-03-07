@@ -245,6 +245,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7783217778440345803, guid: b956c7850cb7f12478d487b62d6e920d,
+        type: 3}
+      propertyPath: pNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7783217778440345803, guid: b956c7850cb7f12478d487b62d6e920d,
+        type: 3}
+      propertyPath: isDS4
+      value: PS
+      objectReference: {fileID: 0}
+    - target: {fileID: 7783217778440345803, guid: b956c7850cb7f12478d487b62d6e920d,
+        type: 3}
+      propertyPath: testingWithKeyBoard
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091378214720942583, guid: b956c7850cb7f12478d487b62d6e920d,
+        type: 3}
+      propertyPath: pNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091378214720942583, guid: b956c7850cb7f12478d487b62d6e920d,
+        type: 3}
+      propertyPath: isDS4
+      value: PS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091378214720942583, guid: b956c7850cb7f12478d487b62d6e920d,
+        type: 3}
+      propertyPath: testingWithXboxController
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b956c7850cb7f12478d487b62d6e920d, type: 3}
 --- !u!1 &1279626878

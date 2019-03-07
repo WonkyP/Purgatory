@@ -14,13 +14,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/TheGame/Scenes/Main/Arena.unity
     guid: 8ebbe50fdfb1a4f458923b0f43aa451b
-  - enabled: 1
+  - enabled: 0
     path: Assets/SelectContorllersScene.unity
     guid: 8646b0e28377a834da8d85f43a5d6745
-  - enabled: 1
+  - enabled: 0
     path: Assets/TheGame/Scenes/Prototyping/Aaron/CameraPrototypeAndMovement.unity
     guid: d908fb3fe20560b4ca428eef1ed5c5a2
   - enabled: 0
     path: Assets/TheGame/Scenes/Prototyping/Aaron/Mouse-LikeForMenus.unity
     guid: 62a47e86d445c9148b05f540a73a9051
+  - enabled: 0
+    path: Assets/TheGame/Scenes/Prototyping/Aaron/HealthBarSystemSplitScreen.unity
+    guid: f2853626390c6944bb7f5cf56adf9898
   m_configObjects: {}
