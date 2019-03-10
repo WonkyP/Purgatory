@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -67,7 +68,6 @@ public class PlayerManager : MonoBehaviour
 
     // Current combos
     // A list with the first combo the player can perform
-    [SerializeField]
     private List<Weapon_Attack> currentComboSet1 = new List<Weapon_Attack>();
     public List<Weapon_Attack> CurrentComboSet1 { get { return this.currentComboSet1; } }
 
@@ -101,6 +101,16 @@ public class PlayerManager : MonoBehaviour
     Weapon_Attack atk2_2 = new Weapon_Attack("Attack 2_Combo2", 2, "Attack");
     Weapon_Attack atk3_2 = new Weapon_Attack("Attack 3_Combo3", 3, "Attack");
     //------------------------------------------------------
+
+
+    // List of strings to store the card names
+    private List<string> cardNames = new List<string>();
+    public List<string> CardNames { get { return this.cardNames; } }
+
+    // List of texts to update the gui
+    [SerializeField]
+    private List<Text> comboSetNames1;
+    public List<Text> ComboSetNames1 { get { return this.comboSetNames1; } }
 
     private void Start()
     {

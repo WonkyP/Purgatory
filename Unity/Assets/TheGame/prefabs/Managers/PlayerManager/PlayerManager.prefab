@@ -48,6 +48,7 @@ MonoBehaviour:
   stamina: 0
   dashDistance: 4
   playerSpeed: 6
+  currentComboSet1: []
 --- !u!114 &1913881242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,3 +61,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf37de79f0e92824eb5ab50892ab1d59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator_: {fileID: 8971125389823105390, guid: 585f88fe8b08bad4b8382c7c58438caf,
+    type: 3}

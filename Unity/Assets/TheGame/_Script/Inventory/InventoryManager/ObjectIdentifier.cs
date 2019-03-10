@@ -49,6 +49,7 @@ public class ObjectIdentifier : MonoBehaviour
 
     TwoHandedWeapon twoHandedWeapon;
 
+
     public void EquipmentSelected()
     {
         itemType = item.ToString();
@@ -81,6 +82,7 @@ public class ObjectIdentifier : MonoBehaviour
 
         attack = inventory.InventoryExtensions.FindWeaponAttack(objectId);
 
+
         if (itemState == ItemState.Deselected)
         {
             if (itemType == TypeOfItem.WeaponAttacks.ToString())
@@ -89,6 +91,7 @@ public class ObjectIdentifier : MonoBehaviour
                 inventoryManager.updatePlayerComboSet(inventoryManager.PlayerManager.CurrentComboSet1, attack);
             }
 
+            inventoryManager.PlayerManager.CardNames.Add(attack.Tag);
             itemState = ItemState.Selected;
 
             GetComponent<Image>().color = Color.magenta;
@@ -96,10 +99,21 @@ public class ObjectIdentifier : MonoBehaviour
         else
         {
             inventoryManager.PlayerManager.ComboSystem.removeAttackFromCombo(inventoryManager.PlayerManager.CurrentComboSet1, attack);
+            inventoryManager.PlayerManager.CardNames.Remove(attack.Tag);
             itemState = ItemState.Deselected;
 
             GetComponent<Image>().color = Color.white;
         }
+
+        for (int i = 0; i < inventoryManager.PlayerManager.ComboSetNames1.Count; i++)
+            inventoryManager.PlayerManager.ComboSetNames1[i].text = "";
+
+        for (int i = 0; i < inventoryManager.PlayerManager.CardNames.Count; i++)
+        {
+            inventoryManager.PlayerManager.ComboSetNames1[i].text = inventoryManager.PlayerManager.CardNames[i];
+        }
+            
+ 
   
     }
 
