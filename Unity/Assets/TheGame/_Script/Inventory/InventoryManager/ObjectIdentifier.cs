@@ -91,7 +91,7 @@ public class ObjectIdentifier : MonoBehaviour
                 inventoryManager.updatePlayerComboSet(inventoryManager.PlayerManager.CurrentComboSet1, attack);
             }
 
-            inventoryManager.PlayerManager.CardNames.Add(attack.Tag);
+            inventoryManager.CardNames.Add(attack.Tag);
             itemState = ItemState.Selected;
 
             GetComponent<Image>().color = Color.magenta;
@@ -99,22 +99,20 @@ public class ObjectIdentifier : MonoBehaviour
         else
         {
             inventoryManager.PlayerManager.ComboSystem.removeAttackFromCombo(inventoryManager.PlayerManager.CurrentComboSet1, attack);
-            inventoryManager.PlayerManager.CardNames.Remove(attack.Tag);
+            inventoryManager.CardNames.Remove(attack.Tag);
             itemState = ItemState.Deselected;
 
             GetComponent<Image>().color = Color.white;
         }
 
-        for (int i = 0; i < inventoryManager.PlayerManager.ComboSetNames1.Count; i++)
-            inventoryManager.PlayerManager.ComboSetNames1[i].text = "";
+        for (int i = 0; i < inventoryManager.ComboSetNames1.Count; i++)
+            inventoryManager.ComboSetNames1[i].text = "";
 
-        for (int i = 0; i < inventoryManager.PlayerManager.CardNames.Count; i++)
+        for (int i = 0; i < inventoryManager.CardNames.Count; i++)
         {
-            inventoryManager.PlayerManager.ComboSetNames1[i].text = inventoryManager.PlayerManager.CardNames[i];
+            inventoryManager.ComboSetNames1[i].text = inventoryManager.CardNames[i];
         }
-            
- 
-  
+         
     }
 
     public void WeaponSelected()

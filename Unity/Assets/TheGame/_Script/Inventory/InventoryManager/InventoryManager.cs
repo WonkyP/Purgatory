@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -9,11 +10,19 @@ public class InventoryManager : MonoBehaviour
     private PlayerManager playerManager;
     public PlayerManager PlayerManager { get { return this.playerManager; } }
 
+    // List of strings to store the card names
+    private List<string> cardNames = new List<string>();
+    public List<string> CardNames { get { return this.cardNames; } }
 
-    private void Update()
-    {
-            
-    }
+    // List of texts to update the gui
+    [SerializeField]
+    private List<Text> comboSetNames1;
+    public List<Text> ComboSetNames1 { get { return this.comboSetNames1; } }
+
+    // List of texts to update the gui
+    [SerializeField]
+    private List<Text> comboSetNames2;
+    public List<Text> ComboSetNames2 { get { return this.comboSetNames2; } }
 
     // Method to update player's helmet
     public void updatePlayerHelmet(Helmet h)

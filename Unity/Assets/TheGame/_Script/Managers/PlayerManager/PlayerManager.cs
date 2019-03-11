@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -101,16 +100,6 @@ public class PlayerManager : MonoBehaviour
     Weapon_Attack atk2_2 = new Weapon_Attack("Attack 2_Combo2", 2, "Attack");
     Weapon_Attack atk3_2 = new Weapon_Attack("Attack 3_Combo3", 3, "Attack");
     //------------------------------------------------------
-
-
-    // List of strings to store the card names
-    private List<string> cardNames = new List<string>();
-    public List<string> CardNames { get { return this.cardNames; } }
-
-    // List of texts to update the gui
-    [SerializeField]
-    private List<Text> comboSetNames1;
-    public List<Text> ComboSetNames1 { get { return this.comboSetNames1; } }
 
     private void Start()
     {

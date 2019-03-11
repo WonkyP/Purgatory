@@ -694,9 +694,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1122664355815791463, guid: c08ffe69f9bd79e4f8456349e89cb745,
         type: 3}
+      propertyPath: comboSetNames1.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122664355815791463, guid: c08ffe69f9bd79e4f8456349e89cb745,
+        type: 3}
       propertyPath: playerManager
       value: 
       objectReference: {fileID: 1785436919}
+    - target: {fileID: 1122664355815791463, guid: c08ffe69f9bd79e4f8456349e89cb745,
+        type: 3}
+      propertyPath: comboSetNames1.Array.data[0]
+      value: 
+      objectReference: {fileID: 1577806076}
+    - target: {fileID: 1122664355815791463, guid: c08ffe69f9bd79e4f8456349e89cb745,
+        type: 3}
+      propertyPath: comboSetNames1.Array.data[1]
+      value: 
+      objectReference: {fileID: 1318877148}
+    - target: {fileID: 1122664355815791463, guid: c08ffe69f9bd79e4f8456349e89cb745,
+        type: 3}
+      propertyPath: comboSetNames1.Array.data[2]
+      value: 
+      objectReference: {fileID: 2137190547}
     - target: {fileID: 1122664355815791462, guid: c08ffe69f9bd79e4f8456349e89cb745,
         type: 3}
       propertyPath: m_LocalPosition.x
