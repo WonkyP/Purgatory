@@ -63,39 +63,25 @@ MonoBehaviour:
     legs: []
   attacks:
     weaponAttacks:
-    - tag: Sure Strike
-      id: 0
-      image: {fileID: 0}
-      description: 
-      attackAnimation: Sure Strike
-      weaponAttackStats:
-        weapon_Power: 0
-    - tag: Sloppy Stab
+    - tag: Crackling Sweep
       id: 1
       image: {fileID: 0}
       description: 
-      attackAnimation: Sloppy Stab
-      weaponAttackStats:
-        weapon_Power: 0
-    - tag: Lunge
-      id: 2
-      image: {fileID: 0}
-      description: 
-      attackAnimation: Lunge
-      weaponAttackStats:
-        weapon_Power: 0
-    - tag: Firsted Uppercut
-      id: 3
-      image: {fileID: 0}
-      description: 
-      attackAnimation: Firsted Uppercut
+      attackAnimation: Attack
       weaponAttackStats:
         weapon_Power: 0
     - tag: Fervent Anger
-      id: 4
+      id: 2
       image: {fileID: 0}
       description: 
-      attackAnimation: Fervent Anger
+      attackAnimation: Attack
+      weaponAttackStats:
+        weapon_Power: 0
+    - tag: Sure Strike
+      id: 3
+      image: {fileID: 0}
+      description: 
+      attackAnimation: Attack
       weaponAttackStats:
         weapon_Power: 0
     spellAttacks:

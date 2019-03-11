@@ -48,7 +48,6 @@ MonoBehaviour:
   stamina: 0
   dashDistance: 4
   playerSpeed: 6
-  currentComboSet1: []
 --- !u!114 &1913881242
 MonoBehaviour:
   m_ObjectHideFlags: 0

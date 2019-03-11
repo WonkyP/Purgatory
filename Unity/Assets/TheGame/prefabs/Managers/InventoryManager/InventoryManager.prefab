@@ -43,5 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a81752be21cd76c4a9477e827352d6bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerManager: {fileID: 7128662069568885970, guid: 5381156143076664997d286f581c5468,
-    type: 3}
+  playerManager: {fileID: 0}
+  comboSetNames1:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  comboSetNames2: []
