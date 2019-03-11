@@ -50,10 +50,32 @@ public class ObjectIdentifier : MonoBehaviour
     TwoHandedWeapon twoHandedWeapon;
 
 
-    public void EquipmentSelected()
+    public void itemSelected()
     {
         itemType = item.ToString();
 
+        if (itemState == ItemState.Deselected)
+        {
+            EquipmentSelected(itemType);
+            AttackSelected(itemType);
+            WeaponSelected(itemType);
+
+            itemState = ItemState.Selected;
+        }
+        else
+        {
+            EquipmentDeselected(itemType);
+            attackDeselected();
+            WeaponDeselected(itemType);
+
+            itemState = ItemState.Deselected;
+        }
+
+        updateComboSetText();
+    }
+
+    private void EquipmentSelected(string itemType)
+    {
         if (itemType == TypeOfItem.Helmets.ToString())
         {
             helmet = inventory.InventoryExtensions.FindHelmet(objectId);
@@ -76,49 +98,48 @@ public class ObjectIdentifier : MonoBehaviour
         }                          
     }
 
-    public void AttackSelected()
+    private void EquipmentDeselected(string itemType)
     {
-        itemType = item.ToString();
+        if (itemType == TypeOfItem.Helmets.ToString())
+            inventoryManager.PlayerHelmetToDefault();
+        else if (itemType == TypeOfItem.Arms.ToString())
+            inventoryManager.PlayerArmToDefault();
+        else if (itemType == TypeOfItem.Chests.ToString())
+            inventoryManager.PlayerChestToDefault();
+        else if (itemType == TypeOfItem.Legs.ToString())
+            inventoryManager.PlayerLegToDefault();
+    }
 
-        attack = inventory.InventoryExtensions.FindWeaponAttack(objectId);
-
-
-        if (itemState == ItemState.Deselected)
+    private void AttackSelected(string itemType)
+    {
+        if (itemType == TypeOfItem.WeaponAttacks.ToString())
         {
-            if (itemType == TypeOfItem.WeaponAttacks.ToString())
-            {
-                //attack = inventory.InventoryExtensions.FindWeaponAttack(objectId);
-                inventoryManager.updatePlayerComboSet(inventoryManager.PlayerManager.CurrentComboSet1, attack);
-            }
-
-            inventoryManager.CardNames.Add(attack.Tag);
-            itemState = ItemState.Selected;
-
-            GetComponent<Image>().color = Color.magenta;
-        }
-        else
-        {
-            inventoryManager.PlayerManager.ComboSystem.removeAttackFromCombo(inventoryManager.PlayerManager.CurrentComboSet1, attack);
-            inventoryManager.CardNames.Remove(attack.Tag);
-            itemState = ItemState.Deselected;
-
-            GetComponent<Image>().color = Color.white;
+            attack = inventory.InventoryExtensions.FindWeaponAttack(objectId);
+            inventoryManager.updatePlayerComboSet(inventoryManager.PlayerManager.CurrentComboSet1, attack);
         }
 
+        inventoryManager.CardNames.Add(attack.Tag);
+        GetComponent<Image>().color = Color.magenta;
+    }
+
+    private void attackDeselected()
+    {
+        inventoryManager.PlayerManager.ComboSystem.removeAttackFromCombo(inventoryManager.PlayerManager.CurrentComboSet1, attack);
+        inventoryManager.CardNames.Remove(attack.Tag);
+        GetComponent<Image>().color = Color.white;
+    }
+
+    private void updateComboSetText()
+    {
         for (int i = 0; i < inventoryManager.ComboSetNames1.Count; i++)
             inventoryManager.ComboSetNames1[i].text = "";
 
         for (int i = 0; i < inventoryManager.CardNames.Count; i++)
-        {
             inventoryManager.ComboSetNames1[i].text = inventoryManager.CardNames[i];
-        }
-         
     }
 
-    public void WeaponSelected()
+    private void WeaponSelected(string itemType)
     {
-        itemType = item.ToString();
-
         if (itemType == TypeOfItem.OneHandedWeapons.ToString())
         {
             oneHandedWeapon = inventory.InventoryExtensions.FindOneHandedWeapon(objectId);
@@ -129,6 +150,14 @@ public class ObjectIdentifier : MonoBehaviour
             twoHandedWeapon = inventory.InventoryExtensions.FindTwoHandedWeapon(objectId);
             inventoryManager.updatePlayerTwoHandedWeapon(twoHandedWeapon);
         }
+    }
+
+    private void WeaponDeselected(string itemType)
+    {
+        if (itemType == TypeOfItem.OneHandedWeapons.ToString())
+            inventoryManager.PlayerOneHandedWeaponToDefault();
+        else if (itemType == TypeOfItem.TwoHandedWeapons.ToString())
+            inventoryManager.PlayerTwoHandedWeaponToDefault();
     }
 
 }

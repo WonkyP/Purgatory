@@ -324,7 +324,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1021794317, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AttackSelected
+      value: itemSelected
       objectReference: {fileID: 0}
     - target: {fileID: 1021794318, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: m_Sprite
@@ -599,7 +599,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1021794317, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AttackSelected
+      value: itemSelected
       objectReference: {fileID: 0}
     - target: {fileID: 1021794318, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: m_Sprite
@@ -1453,6 +1453,10 @@ PrefabInstance:
       propertyPath: comboSetNames1.Array.data[2]
       value: 
       objectReference: {fileID: 2137190547}
+    - target: {fileID: 1021794317, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: itemSelected
+      objectReference: {fileID: 0}
     - target: {fileID: 1021794318, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: m_Color.r
       value: 1
