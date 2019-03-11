@@ -244,7 +244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 161708858, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 88
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 161708858, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -281,6 +281,14 @@ PrefabInstance:
     - target: {fileID: 161708858, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 161708858, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1093018
+      objectReference: {fileID: 0}
+    - target: {fileID: 161708858, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.67790633
       objectReference: {fileID: 0}
     - target: {fileID: 1021794316, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: comboSetNames1.Array.size
@@ -511,7 +519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 161708858, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 230
+      value: 289
       objectReference: {fileID: 0}
     - target: {fileID: 161708858, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -548,6 +556,14 @@ PrefabInstance:
     - target: {fileID: 161708858, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 161708858, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.67420125
+      objectReference: {fileID: 0}
+    - target: {fileID: 161708858, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1315546
       objectReference: {fileID: 0}
     - target: {fileID: 1021794316, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: comboSetNames1.Array.size
@@ -808,7 +824,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -156, y: 54}
+  m_AnchoredPosition: {x: -278, y: 54}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1318877148
@@ -887,7 +903,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -156, y: 114}
+  m_AnchoredPosition: {x: -278, y: 149}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1577806076
@@ -980,7 +996,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1265,7 +1281,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -156, y: -4}
+  m_AnchoredPosition: {x: -282, y: -42}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2137190547
@@ -1367,7 +1383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 161708858, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -54
+      value: -112
       objectReference: {fileID: 0}
     - target: {fileID: 161708858, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1404,6 +1420,14 @@ PrefabInstance:
     - target: {fileID: 161708858, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 161708858, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6827318
+      objectReference: {fileID: 0}
+    - target: {fileID: 161708858, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.105061
       objectReference: {fileID: 0}
     - target: {fileID: 1021794316, guid: b15cfbfe67e91b14db040cb7158de7e5, type: 3}
       propertyPath: comboSetNames1.Array.size
