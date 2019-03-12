@@ -124,14 +124,85 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7366008584206772508, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7366008584206772508, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
-        type: 3}
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 1682756291020194001}
+    - target: {fileID: 7366008584206772508, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366008584206614993, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Name
+      value: Player02_Inventory
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366008583024381769, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Name
+      value: Player02_CardLibrary
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366008583246051715, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Name
+      value: Player02_AttackSlots
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366008584206614995, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a18065a4e7731b141b57568a8f2b5022,
+        type: 3}
+    - target: {fileID: 7366008584816394075, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Name
+      value: P2_X1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1911922139822844188, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Name
+      value: P2_X2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4494501911761650406, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Name
+      value: P2_X3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936363472238540986, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Name
+      value: P2_X4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687037954589770637, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Name
+      value: P2_X5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102437126280791647, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Name
+      value: P2_Y1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6751360563353891535, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Name
+      value: P2_Y2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9101067739998611941, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Name
+      value: P2_Y3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4761350394631006216, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Name
+      value: P2_Y4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7457214058943674668, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Name
+      value: P2_Y5
+      objectReference: {fileID: 0}
     - target: {fileID: 1918933969, guid: 0a3546d309b9c4c4bad0974e6ecce0ff, type: 3}
       propertyPath: inventory
       value: 
