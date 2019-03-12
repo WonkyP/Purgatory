@@ -10,6 +10,24 @@ public class InventoryControllerInteraction : MonoBehaviour
     int f = 0;
     int c = 0;
 
+
+
+
+    public string controllerHorizontalInput;
+    public string controllerVerticalInput;
+
+    public int pNumber = 0;
+    public string isDS4 = "";
+
+    float inputLevel = 0;
+
+    public bool TestingWithKeyBoard;
+    public bool TestingWithXboxController;
+    public bool TestingWithPs4Controller;
+
+
+
+
     public int maxC;
     int maxF;
 
@@ -27,11 +45,13 @@ public class InventoryControllerInteraction : MonoBehaviour
     {
         cols[c].fils[f].color = Color.yellow;
         maxC = maxF = cols.Count;
+
+        axisInputManager();
     }
 
 
-    float verticalAxis = 0;
-    float horizontalAxis = 0;
+    public float verticalAxis = 0;
+    public float horizontalAxis = 0;
     bool verticalPressed = false;
     bool horizontalPressed = false;
     // Update is called once per frame
@@ -40,6 +60,28 @@ public class InventoryControllerInteraction : MonoBehaviour
 
         verticalAxis = Input.GetAxisRaw("DpadVerticalPSTest");
         horizontalAxis = Input.GetAxisRaw("DpadHorizontalPSTest");
+
+        try
+        {
+            verticalAxis -= Input.GetAxis(controllerVerticalInput);
+            horizontalAxis += Input.GetAxis(controllerHorizontalInput);
+        }
+        catch
+        {
+            Debug.Log("Not input detection");
+        }
+
+        //try
+        //{
+        //    verticalAxis = hInput.GetAxis(controllerVerticalInput);
+        //    horizontalAxis = hInput.GetAxis(controllerHorizontalInput);
+        //}
+        //catch
+        //{
+        //    Debug.Log("Not HHHHinput detection");
+        //}
+
+
 
 
         verticalInput();
@@ -50,7 +92,7 @@ public class InventoryControllerInteraction : MonoBehaviour
 
     void verticalInput()
     {
-        if (verticalAxis > 0)
+        if (verticalAxis > inputLevel)
         {
             if (!verticalPressed)
             {
@@ -61,7 +103,7 @@ public class InventoryControllerInteraction : MonoBehaviour
                 cols[c].fils[f].color = Color.yellow;
             }
         }
-        else if (verticalAxis < 0)
+        else if (verticalAxis < -inputLevel)
         {
             if (!verticalPressed)
             {
@@ -77,7 +119,7 @@ public class InventoryControllerInteraction : MonoBehaviour
 
     void horizontalInput()
     {
-        if (horizontalAxis > 0)
+        if (horizontalAxis > inputLevel)
         {
             if (!horizontalPressed)
             {
@@ -88,7 +130,7 @@ public class InventoryControllerInteraction : MonoBehaviour
                 cols[c].fils[f].color = Color.yellow;
             }
         }
-        else if (horizontalAxis < 0)
+        else if (horizontalAxis < -inputLevel)
         {
             if (!horizontalPressed)
             {
@@ -113,4 +155,30 @@ public class InventoryControllerInteraction : MonoBehaviour
         if (f < 0) f = maxF - 1;
         else if (f >= maxF) f = 0;
     }
+
+
+    void axisInputManager()
+    {
+
+        if (TestingWithKeyBoard)
+        {
+            controllerHorizontalInput = "HorizontalK";
+            controllerVerticalInput = "VerticalK";
+            
+        }
+        else if (TestingWithPs4Controller || TestingWithXboxController)
+        {
+            controllerHorizontalInput = "Horizontal1Test";
+            controllerVerticalInput = "Vertical1Test";
+            inputLevel = 0.5f;
+        }
+        else
+        {
+            controllerHorizontalInput = "Horizontal" + pNumber.ToString();
+            controllerVerticalInput = "Vertical" + pNumber.ToString();
+            inputLevel = 0.5f;
+        }
+    }
+
+
 }
