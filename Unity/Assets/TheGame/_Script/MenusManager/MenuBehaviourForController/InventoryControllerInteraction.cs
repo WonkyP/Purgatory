@@ -16,6 +16,12 @@ public class InventoryControllerInteraction : MonoBehaviour
     public string controllerHorizontalInput;
     public string controllerVerticalInput;
 
+    public string dPadInputVertical = "" ;
+    public string dpadInputHorizontal = "";
+
+    public string selectionButton = "";
+    public string undoButton = "";
+
     public int pNumber = 0;
     public string isDS4 = "";
 
@@ -37,8 +43,12 @@ public class InventoryControllerInteraction : MonoBehaviour
         public List<Image> fils;
     }
 
+
+
     public List<Custom> cols;
 
+
+    private bool[,] booleanMatrix;
 
     // Start is called before the first frame update
     void Start()
@@ -46,7 +56,14 @@ public class InventoryControllerInteraction : MonoBehaviour
         cols[c].fils[f].color = Color.yellow;
         maxC = maxF = cols.Count;
 
+        booleanMatrix = new bool[maxF, maxC];
+
         axisInputManager();
+        dPadInput();
+
+        selectionButton = "A" + isDS4 + pNumber.ToString();
+        undoButton = "B" + isDS4 + pNumber.ToString();
+
     }
 
 
@@ -58,8 +75,11 @@ public class InventoryControllerInteraction : MonoBehaviour
     void Update()
     {
 
-        verticalAxis = Input.GetAxisRaw("DpadVerticalPSTest");
-        horizontalAxis = Input.GetAxisRaw("DpadHorizontalPSTest");
+
+
+        verticalAxis = Input.GetAxisRaw(dPadInputVertical);
+        horizontalAxis = Input.GetAxisRaw(dpadInputHorizontal);
+
 
         try
         {
@@ -69,6 +89,18 @@ public class InventoryControllerInteraction : MonoBehaviour
         catch
         {
             Debug.Log("Not input detection");
+        }
+
+        if (hInput.GetButtonDown(selectionButton))
+        {
+            cols[c].fils[f].color = Color.red;
+            booleanMatrix[c,f] = true;
+        }
+
+        if (hInput.GetButtonDown(undoButton))
+        {
+            cols[c].fils[f].color = Color.yellow;
+            booleanMatrix[c, f] = false;
         }
 
         //try
@@ -96,22 +128,35 @@ public class InventoryControllerInteraction : MonoBehaviour
         {
             if (!verticalPressed)
             {
-                cols[c].fils[f].color = Color.white;
+                if (!booleanMatrix[c, f])
+                    cols[c].fils[f].color = Color.white;
+                else cols[c].fils[f].color = Color.red;
+
+
                 verticalPressed = true;
                 f++;
                 fixFilsIndex();
-                cols[c].fils[f].color = Color.yellow;
+
+                if (booleanMatrix[c, f])
+                    cols[c].fils[f].color = Color.magenta;
+                else cols[c].fils[f].color = Color.yellow;
             }
         }
         else if (verticalAxis < -inputLevel)
         {
             if (!verticalPressed)
             {
-                cols[c].fils[f].color = Color.white;
+                if (!booleanMatrix[c, f])
+                    cols[c].fils[f].color = Color.white;
+                else cols[c].fils[f].color = Color.red;
+
                 verticalPressed = true;
                 f--;
                 fixFilsIndex();
-                cols[c].fils[f].color = Color.yellow;
+
+                if (booleanMatrix[c, f])
+                    cols[c].fils[f].color = Color.magenta;
+                else cols[c].fils[f].color = Color.yellow;
             }
         }
         else verticalPressed = false;
@@ -123,22 +168,34 @@ public class InventoryControllerInteraction : MonoBehaviour
         {
             if (!horizontalPressed)
             {
-                cols[c].fils[f].color = Color.white;
+                if (!booleanMatrix[c, f])
+                    cols[c].fils[f].color = Color.white;
+                else cols[c].fils[f].color = Color.red;
+
                 horizontalPressed = true;
                 c++;
                 fixColIndex();
-                cols[c].fils[f].color = Color.yellow;
+
+                if (booleanMatrix[c, f])
+                    cols[c].fils[f].color = Color.magenta;
+                else cols[c].fils[f].color = Color.yellow;
             }
         }
         else if (horizontalAxis < -inputLevel)
         {
             if (!horizontalPressed)
             {
-                cols[c].fils[f].color = Color.white;
+                if (!booleanMatrix[c, f])
+                    cols[c].fils[f].color = Color.white;
+                else cols[c].fils[f].color = Color.red;
+
                 horizontalPressed = true;
                 c--;
                 fixColIndex();
-                cols[c].fils[f].color = Color.yellow;
+
+                if (booleanMatrix[c, f])
+                    cols[c].fils[f].color = Color.magenta;
+                else cols[c].fils[f].color = Color.yellow;
             }
         }
         else horizontalPressed = false;
@@ -159,7 +216,6 @@ public class InventoryControllerInteraction : MonoBehaviour
 
     void axisInputManager()
     {
-
         if (TestingWithKeyBoard)
         {
             controllerHorizontalInput = "HorizontalK";
@@ -179,6 +235,12 @@ public class InventoryControllerInteraction : MonoBehaviour
             inputLevel = 0.5f;
         }
     }
+
+    void dPadInput()
+    {
+        dPadInputVertical = "DpadVertical" + isDS4 + pNumber.ToString() ;
+        dpadInputHorizontal = "DpadHorizontal" + isDS4 + pNumber.ToString();
+     }
 
 
 }

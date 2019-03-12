@@ -13,6 +13,11 @@ public class MatchManager : MonoBehaviour {
     //Original positions of the players
     public GameObject player1;
     public GameObject player2;
+
+    public GameObject canvas1;
+    public GameObject Canvas2;
+
+    
     //public GameObject spawn3;
     //public GameObject spawn4;
 
@@ -24,6 +29,7 @@ public class MatchManager : MonoBehaviour {
 
     private void Awake()
     {
+
         // = GameObject.Find("InputManager").GetComponent<InputManager>();
         Nplayer = PlayerPrefs.GetInt("Nplayers");
 
