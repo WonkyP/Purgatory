@@ -26,7 +26,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/TheGame/Scenes/Prototyping/Aaron/HealthBarSystemSplitScreen.unity
     guid: f2853626390c6944bb7f5cf56adf9898
-  - enabled: 1
+  - enabled: 0
     path: Assets/TheGame/Scenes/Prototyping/Pablo/Inventory/InteractableInventory_Test.unity
     guid: 77b44ed2347d9a14281078116629deba
+  - enabled: 0
+    path: Assets/TheGame/Scenes/Prototyping/Aaron/ItemSelectorCanvas.unity
+    guid: 85bde6f0655bd2146b8aff4356d36a6e
   m_configObjects: {}

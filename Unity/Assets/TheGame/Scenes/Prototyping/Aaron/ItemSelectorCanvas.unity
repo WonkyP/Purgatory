@@ -763,7 +763,7 @@ PrefabInstance:
     - target: {fileID: 2859150498541104983, guid: 50c521e1b4cd55a4db78751375aa6e81,
         type: 3}
       propertyPath: TestingWithKeyBoard
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2859150498541104983, guid: 50c521e1b4cd55a4db78751375aa6e81,
         type: 3}
