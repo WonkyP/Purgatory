@@ -762,6 +762,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_Player02_Inventory_Cards
       objectReference: {fileID: 0}
+    - target: {fileID: 1682756289745173118, guid: c57241d888d0e9046bb7d8c35c23b02d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1682756289745173106, guid: c57241d888d0e9046bb7d8c35c23b02d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -872,61 +877,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 504460497}
-    - target: {fileID: 1682756291622737559, guid: c57241d888d0e9046bb7d8c35c23b02d,
-        type: 3}
-      propertyPath: m_Name
-      value: P2_X1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7776462185057157328, guid: c57241d888d0e9046bb7d8c35c23b02d,
-        type: 3}
-      propertyPath: m_Name
-      value: P2_X2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5709620416353495850, guid: c57241d888d0e9046bb7d8c35c23b02d,
-        type: 3}
-      propertyPath: m_Name
-      value: P2_X3
-      objectReference: {fileID: 0}
-    - target: {fileID: 965845178713805174, guid: c57241d888d0e9046bb7d8c35c23b02d,
-        type: 3}
-      propertyPath: m_Name
-      value: P2_X4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3291614276110756417, guid: c57241d888d0e9046bb7d8c35c23b02d,
-        type: 3}
-      propertyPath: m_Name
-      value: P2_X5
-      objectReference: {fileID: 0}
-    - target: {fileID: 77312756254519187, guid: c57241d888d0e9046bb7d8c35c23b02d,
-        type: 3}
-      propertyPath: m_Name
-      value: P2_Y1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3229835747733625603, guid: c57241d888d0e9046bb7d8c35c23b02d,
-        type: 3}
-      propertyPath: m_Name
-      value: P2_Y2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1093940171984666665, guid: c57241d888d0e9046bb7d8c35c23b02d,
-        type: 3}
-      propertyPath: m_Name
-      value: P2_Y3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3706672347590869444, guid: c57241d888d0e9046bb7d8c35c23b02d,
-        type: 3}
-      propertyPath: m_Name
-      value: P2_Y4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1593799849200685280, guid: c57241d888d0e9046bb7d8c35c23b02d,
-        type: 3}
-      propertyPath: m_Name
-      value: P2_Y5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1682756289520395909, guid: c57241d888d0e9046bb7d8c35c23b02d,
-        type: 3}
-      propertyPath: m_Name
-      value: Player02_CardLibrary
-      objectReference: {fileID: 0}
     - target: {fileID: 8170383125355950621, guid: c57241d888d0e9046bb7d8c35c23b02d,
         type: 3}
       propertyPath: inventory
@@ -956,6 +906,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_Player01_Inventory_Cards
       objectReference: {fileID: 0}
+    - target: {fileID: 7366008584362894558, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8e72b570d50eff14ca742b9ff1453252,
+        type: 3}
     - target: {fileID: 7366008582931731390, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
         type: 3}
       propertyPath: m_LocalPosition.x
