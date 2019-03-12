@@ -763,7 +763,7 @@ PrefabInstance:
     - target: {fileID: 2859150498541104983, guid: 50c521e1b4cd55a4db78751375aa6e81,
         type: 3}
       propertyPath: TestingWithKeyBoard
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2859150498541104983, guid: 50c521e1b4cd55a4db78751375aa6e81,
         type: 3}
@@ -774,6 +774,11 @@ PrefabInstance:
         type: 3}
       propertyPath: isDS4
       value: PS
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859150498541104983, guid: 50c521e1b4cd55a4db78751375aa6e81,
+        type: 3}
+      propertyPath: TestingWithXboxController
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50c521e1b4cd55a4db78751375aa6e81, type: 3}

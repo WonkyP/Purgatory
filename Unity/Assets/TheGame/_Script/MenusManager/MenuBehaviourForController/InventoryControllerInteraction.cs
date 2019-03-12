@@ -60,10 +60,8 @@ public class InventoryControllerInteraction : MonoBehaviour
 
         axisInputManager();
         dPadInput();
-
-        selectionButton = "A" + isDS4 + pNumber.ToString();
-        undoButton = "B" + isDS4 + pNumber.ToString();
-
+        selectInput();
+        undoInput();
     }
 
 
@@ -80,28 +78,47 @@ public class InventoryControllerInteraction : MonoBehaviour
         verticalAxis = Input.GetAxisRaw(dPadInputVertical);
         horizontalAxis = Input.GetAxisRaw(dpadInputHorizontal);
 
+        verticalAxis -= Input.GetAxis(controllerVerticalInput);
+        horizontalAxis += Input.GetAxis(controllerHorizontalInput);
 
+
+
+        //for controllers on the final build
         try
         {
-            verticalAxis -= Input.GetAxis(controllerVerticalInput);
-            horizontalAxis += Input.GetAxis(controllerHorizontalInput);
+            if (hInput.GetButtonDown(selectionButton))
+            {
+                cols[c].fils[f].color = Color.red;
+                booleanMatrix[c, f] = true;
+            }
+
+            if (hInput.GetButtonDown(undoButton))
+            {
+                cols[c].fils[f].color = Color.yellow;
+                booleanMatrix[c, f] = false;
+            }
         }
         catch
         {
-            Debug.Log("Not input detection");
+
         }
 
-        if (hInput.GetButtonDown(selectionButton))
+        try
         {
-            cols[c].fils[f].color = Color.red;
-            booleanMatrix[c,f] = true;
-        }
+            if (Input.GetButtonDown(selectionButton))
+            {
+                cols[c].fils[f].color = Color.red;
+                booleanMatrix[c, f] = true;
+            }
 
-        if (hInput.GetButtonDown(undoButton))
-        {
-            cols[c].fils[f].color = Color.yellow;
-            booleanMatrix[c, f] = false;
+            if (Input.GetButtonDown(undoButton))
+            {
+                cols[c].fils[f].color = Color.yellow;
+                booleanMatrix[c, f] = false;
+            }
         }
+        catch { }
+
 
         //try
         //{
@@ -242,5 +259,45 @@ public class InventoryControllerInteraction : MonoBehaviour
         dpadInputHorizontal = "DpadHorizontal" + isDS4 + pNumber.ToString();
      }
 
+
+    void selectInput()
+    {
+        if (TestingWithKeyBoard)
+        {
+            selectionButton = "attack1K";
+        }
+        else if (TestingWithPs4Controller)
+        {
+            selectionButton = "selectPs4Test";
+        }
+        else if (TestingWithXboxController)
+        {
+            selectionButton = "selectXboxTest";
+        }
+        else
+        {
+            selectionButton = "A" + isDS4 + pNumber.ToString();
+        }
+    }
+
+    void undoInput()
+    {
+        if (TestingWithKeyBoard)
+        {
+            undoButton = "attack2K";
+        }
+        else if (TestingWithPs4Controller)
+        {
+            undoButton = "dashPs4Test";
+        }
+        else if (TestingWithXboxController)
+        {
+            undoButton = "dashXboxTest";
+        }
+        else
+        {
+            undoButton = "B" + isDS4 + pNumber.ToString();
+        }
+    }
 
 }
