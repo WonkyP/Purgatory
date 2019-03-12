@@ -12,9 +12,16 @@ ModelImporter:
     2000000: ZBrushDefault
     2100000: Boots
     2300000: Boots
+    2300002: //RootNode
     3300000: Boots
+    3300002: //RootNode
     4300000: Boots
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boots
+    second: {fileID: 2100000, guid: 4a1d9fd0bd76d534f8fb70c977af8581, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

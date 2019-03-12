@@ -12,9 +12,16 @@ ModelImporter:
     2000000: ZBrushDefault
     2100000: Pauldron
     2300000: Pauldron
+    2300002: //RootNode
     3300000: Pauldron
+    3300002: //RootNode
     4300000: Pauldron
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pauldron
+    second: {fileID: 2100000, guid: a30c5d7826ec8fc449e45d0c7d7438e2, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

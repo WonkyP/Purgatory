@@ -12,9 +12,16 @@ ModelImporter:
     2000000: ZBrushDefault
     2100000: Wooden_Shield
     2300000: Wooden_Shield
+    2300002: //RootNode
     3300000: Wooden_Shield
+    3300002: //RootNode
     4300000: Wooden_Shield
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wooden_Shield
+    second: {fileID: 2100000, guid: f98ae45c75f938c46bb450ae178f7f90, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

@@ -6,15 +6,33 @@ ModelImporter:
     100000: Human
     100002: //RootNode
     100004: ZBrushDefault
+    100006: Camera
+    100008: Lamp
+    100010: TheChosenOne
     400000: Human
     400002: //RootNode
     400004: ZBrushDefault
+    400006: Camera
+    400008: Lamp
+    400010: TheChosenOne
     2000000: ZBrushDefault
     2100000: Human
+    2100002: No Name
     2300000: Human
+    2300002: TheChosenOne
+    2300004: //RootNode
     3300000: Human
+    3300002: TheChosenOne
+    3300004: //RootNode
     4300000: Human
-  externalObjects: {}
+    4300002: TheChosenOne
+    10800000: Lamp
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Human
+    second: {fileID: 2100000, guid: dc16c6158afccfd40ad410b4cd1a816c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

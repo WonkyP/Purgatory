@@ -12,9 +12,16 @@ ModelImporter:
     2000000: ZBrushDefault
     2100000: Leaf_Sword
     2300000: Leaf_Sword
+    2300002: //RootNode
     3300000: Leaf_Sword
+    3300002: //RootNode
     4300000: Leaf_Sword
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leaf_Sword
+    second: {fileID: 2100000, guid: d7e405e3db9507c459181c443914ec4e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

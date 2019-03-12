@@ -12,9 +12,16 @@ ModelImporter:
     2000000: ZBrushDefault
     2100000: Helmet
     2300000: Helmet
+    2300002: //RootNode
     3300000: Helmet
+    3300002: //RootNode
     4300000: Helmet
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Helmet
+    second: {fileID: 2100000, guid: f81d74257dfacc146bbc4b4823e3db46, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
