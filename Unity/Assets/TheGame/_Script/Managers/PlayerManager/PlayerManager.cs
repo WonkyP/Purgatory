@@ -111,18 +111,18 @@ public class PlayerManager : MonoBehaviour
         comboSystem = GetComponent<ComboSystem>();
         healthScript = GetComponent<Health>();
 
-        comboSystem.addAttackToCombo(CurrentComboSet1, atk1_1);
-        comboSystem.addAttackToCombo(CurrentComboSet1, atk2_1);
-        comboSystem.addAttackToCombo(CurrentComboSet1, atk3_1);
-        comboSystem.addAttackToCombo(CurrentComboSet1, atk4_1);
-        comboSystem.addAttackToCombo(CurrentComboSet1, atk5_1);
+        //comboSystem.addAttackToCombo(CurrentComboSet1, atk1_1);
+        //comboSystem.addAttackToCombo(CurrentComboSet1, atk2_1);
+        //comboSystem.addAttackToCombo(CurrentComboSet1, atk3_1);
+        //comboSystem.addAttackToCombo(CurrentComboSet1, atk4_1);
+        //comboSystem.addAttackToCombo(CurrentComboSet1, atk5_1);
 
         comboSystem.addAttackToCombo(currentComboSet2, atk1_2);
         comboSystem.addAttackToCombo(currentComboSet2, atk2_2);
         comboSystem.addAttackToCombo(currentComboSet2, atk3_2);
 
-        ComboSystem.createComboQueue(CurrentComboSet1, comboSet1);
-        ComboSystem.createComboQueue(CurrentComboSet2, comboSet2);
+        //ComboSystem.createComboQueue(CurrentComboSet1, comboSet1);
+        //ComboSystem.createComboQueue(CurrentComboSet2, comboSet2);
     }
 
 }

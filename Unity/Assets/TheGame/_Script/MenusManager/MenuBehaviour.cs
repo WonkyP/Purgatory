@@ -9,6 +9,10 @@ public class MenuBehaviour : MonoBehaviour
 {
     public GameObject AudioManagerObject;
     private GameObject PauseMenu;
+
+    [SerializeField]
+    public PlayerManager playerManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +40,8 @@ public class MenuBehaviour : MonoBehaviour
 
     public void GoToArena()
     {
+        playerManager.ComboSystem.createComboQueue(playerManager.CurrentComboSet1, playerManager.ComboSet1);
+        playerManager.ComboSystem.createComboQueue(playerManager.CurrentComboSet2, playerManager.ComboSet2);
         SceneManager.LoadScene(2);
         AudioManagerObject.GetComponent<AudioManager>().ArenaStart();
     }
