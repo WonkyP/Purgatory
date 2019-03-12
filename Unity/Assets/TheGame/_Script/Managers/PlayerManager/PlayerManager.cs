@@ -101,9 +101,15 @@ public class PlayerManager : MonoBehaviour
     Weapon_Attack atk3_2 = new Weapon_Attack("Attack 3_Combo3", 3, "Attack");
     //------------------------------------------------------
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     private void Start()
     {
-        CreatePlayerInventory();
+        comboSystem = GetComponent<ComboSystem>();
+        healthScript = GetComponent<Health>();
 
         comboSystem.addAttackToCombo(CurrentComboSet1, atk1_1);
         comboSystem.addAttackToCombo(CurrentComboSet1, atk2_1);
@@ -117,13 +123,6 @@ public class PlayerManager : MonoBehaviour
 
         ComboSystem.createComboQueue(CurrentComboSet1, comboSet1);
         ComboSystem.createComboQueue(CurrentComboSet2, comboSet2);
-
-        healthScript = GetComponent<Health>();
-    }
-
-    private void CreatePlayerInventory()
-    {
-        comboSystem = GetComponent<ComboSystem>();
     }
 
 }
