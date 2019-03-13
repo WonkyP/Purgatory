@@ -86,24 +86,26 @@ public class PlayerManager : MonoBehaviour
 
     //------------------------------------------------------
     // TESTING: CAN BE DELETED
-    Weapon_Attack atk1_1 = new Weapon_Attack("Attack 1_Combo1", 1, "Sure Strike");
-    Weapon_Attack atk2_1 = new Weapon_Attack("Attack 2_Combo1", 2, "Sloppy Stab");
-    Weapon_Attack atk3_1 = new Weapon_Attack("Attack 3_Combo1", 3, "Lunge");
-    Weapon_Attack atk4_1 = new Weapon_Attack("Attack 2_Combo1", 4, "Fisted Uppercut");
-    Weapon_Attack atk5_1 = new Weapon_Attack("Attack 3_Combo1", 5, "Fervent Anger");
+    //Weapon_Attack atk1_1 = new Weapon_Attack("Attack 1_Combo1", 1, "Sure Strike");
+    //Weapon_Attack atk2_1 = new Weapon_Attack("Attack 2_Combo1", 2, "Sloppy Stab");
+    //Weapon_Attack atk3_1 = new Weapon_Attack("Attack 3_Combo1", 3, "Lunge");
+    //Weapon_Attack atk4_1 = new Weapon_Attack("Attack 2_Combo1", 4, "Fisted Uppercut");
+    //Weapon_Attack atk5_1 = new Weapon_Attack("Attack 3_Combo1", 5, "Fervent Anger");
 
     //------------------------------------------------------
 
     //------------------------------------------------------
     // TESTING: CAN BE DELETED
-    Weapon_Attack atk1_2 = new Weapon_Attack("Attack 1_Combo2", 1, "Attack");
-    Weapon_Attack atk2_2 = new Weapon_Attack("Attack 2_Combo2", 2, "Attack");
-    Weapon_Attack atk3_2 = new Weapon_Attack("Attack 3_Combo3", 3, "Attack");
+    //Weapon_Attack atk1_2 = new Weapon_Attack("Attack 1_Combo2", 1, "Attack");
+    //Weapon_Attack atk2_2 = new Weapon_Attack("Attack 2_Combo2", 2, "Attack");
+    //Weapon_Attack atk3_2 = new Weapon_Attack("Attack 3_Combo3", 3, "Attack");
     //------------------------------------------------------
 
     private void Start()
     {
         comboSet1 = PlayerDataHandler.instance.getComboSet1(1);
+        comboSet2 = PlayerDataHandler.instance.getComboSet2(1);
+
         comboSystem = GetComponent<ComboSystem>();
         healthScript = GetComponent<Health>();
 
@@ -115,9 +117,9 @@ public class PlayerManager : MonoBehaviour
         //comboSystem.addAttackToCombo(CurrentComboSet1, atk4_1);
         //comboSystem.addAttackToCombo(CurrentComboSet1, atk5_1);
 
-        comboSystem.addAttackToCombo(currentComboSet2, atk1_2);
-        comboSystem.addAttackToCombo(currentComboSet2, atk2_2);
-        comboSystem.addAttackToCombo(currentComboSet2, atk3_2);
+        //comboSystem.addAttackToCombo(currentComboSet2, atk1_2);
+        //comboSystem.addAttackToCombo(currentComboSet2, atk2_2);
+        //comboSystem.addAttackToCombo(currentComboSet2, atk3_2);
 
         //ComboSystem.createComboQueue(CurrentComboSet1, comboSet1);
         //ComboSystem.createComboQueue(CurrentComboSet2, comboSet2);

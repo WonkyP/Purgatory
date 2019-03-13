@@ -20,6 +20,10 @@ public class PlayerDataHandler : MonoBehaviour
     public Queue<Weapon_Attack> Player2ComboSet2 { get { return this.player2ComboSet2; } set { this.player2ComboSet2 = value; } }
 
 
+    Weapon_Attack atk1_2 = new Weapon_Attack("Attack 1_Combo2", 1, "Attack");
+    Weapon_Attack atk2_2 = new Weapon_Attack("Attack 2_Combo2", 2, "Attack");
+    Weapon_Attack atk3_2 = new Weapon_Attack("Attack 3_Combo3", 3, "Attack");
+
     private void Awake()
     {
         if (instance == null)
@@ -29,6 +33,10 @@ public class PlayerDataHandler : MonoBehaviour
         }
         else if (instance != this)
             Destroy(gameObject);
+
+        player1ComboSet2.Enqueue(atk1_2);
+        player1ComboSet2.Enqueue(atk2_2);
+        player1ComboSet2.Enqueue(atk3_2);
     }
 
     public Queue<Weapon_Attack> getComboSet1(int playerId)
@@ -37,6 +45,14 @@ public class PlayerDataHandler : MonoBehaviour
             return Player1ComboSet1;
         else
             return player2ComboSet1;
+    }
+
+    public Queue<Weapon_Attack> getComboSet2(int playerId)
+    {
+        if (playerId == 1)
+            return Player1ComboSet2;
+        else
+            return player2ComboSet2;
     }
 
     public void saveComboSet1(int playerId, Queue<Weapon_Attack> comboset1)
