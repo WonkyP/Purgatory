@@ -60,6 +60,14 @@ public class PlayerDataHandler : MonoBehaviour
         if (playerId == 1)
             player1ComboSet1 = comboset1;
         else
-            player2ComboSet2 = comboset1;
+            player2ComboSet1 = comboset1;
+    }
+
+    public void saveComboSet2(int playerId, Queue<Weapon_Attack> comboset2)
+    {
+        if (playerId == 1)
+            player1ComboSet2 = comboset2;
+        else
+            player2ComboSet2 = comboset2;
     }
 }
