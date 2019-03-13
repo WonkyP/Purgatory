@@ -41,7 +41,7 @@ public class MenuBehaviour : MonoBehaviour
     public void GoToArena()
     {
         playerManager.ComboSystem.createComboQueue(playerManager.CurrentComboSet1, playerManager.ComboSet1);
-        playerManager.ComboSystem.createComboQueue(playerManager.CurrentComboSet2, playerManager.ComboSet2);
+        //playerManager.ComboSystem.createComboQueue(playerManager.CurrentComboSet2, playerManager.ComboSet2);
         SceneManager.LoadScene(2);
         AudioManagerObject.GetComponent<AudioManager>().ArenaStart();
     }

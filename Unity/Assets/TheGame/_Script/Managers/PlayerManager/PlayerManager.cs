@@ -76,7 +76,7 @@ public class PlayerManager : MonoBehaviour
 
     // Queues with the attacks in the game
     // A queue with the first combo the player can perform
-    private Queue<Weapon_Attack> comboSet1 = new Queue<Weapon_Attack>();
+    public Queue<Weapon_Attack> comboSet1 = new Queue<Weapon_Attack>();
     public Queue<Weapon_Attack> ComboSet1 { get { return this.comboSet1; } }
 
     // A queue with the second combo the player can perform
