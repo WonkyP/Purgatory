@@ -67,7 +67,7 @@ public class PlayerManager : MonoBehaviour
 
     // Current combos
     // A list with the first combo the player can perform
-    private List<Weapon_Attack> currentComboSet1 = new List<Weapon_Attack>();
+    public List<Weapon_Attack> currentComboSet1 = new List<Weapon_Attack>();
     public List<Weapon_Attack> CurrentComboSet1 { get { return this.currentComboSet1; } }
 
     // A list with the second combo the player can perform
@@ -76,7 +76,7 @@ public class PlayerManager : MonoBehaviour
 
     // Queues with the attacks in the game
     // A queue with the first combo the player can perform
-    public Queue<Weapon_Attack> comboSet1 = new Queue<Weapon_Attack>();
+    private Queue<Weapon_Attack> comboSet1 = new Queue<Weapon_Attack>();
     public Queue<Weapon_Attack> ComboSet1 { get { return this.comboSet1; } }
 
     // A queue with the second combo the player can perform
@@ -101,15 +101,13 @@ public class PlayerManager : MonoBehaviour
     Weapon_Attack atk3_2 = new Weapon_Attack("Attack 3_Combo3", 3, "Attack");
     //------------------------------------------------------
 
-    private void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
-
     private void Start()
     {
+        comboSet1 = PlayerDataHandler.instance.getComboSet1(1);
         comboSystem = GetComponent<ComboSystem>();
         healthScript = GetComponent<Health>();
+
+        Debug.Log(comboSet1.Peek().Tag);
 
         //comboSystem.addAttackToCombo(CurrentComboSet1, atk1_1);
         //comboSystem.addAttackToCombo(CurrentComboSet1, atk2_1);

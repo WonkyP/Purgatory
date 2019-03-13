@@ -370,6 +370,49 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b07725b817864d47a1d24e05e98c66d, type: 3}
+--- !u!1 &274163859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 274163861}
+  - component: {fileID: 274163860}
+  m_Layer: 0
+  m_Name: PlayersDataHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &274163860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274163859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a236648f7eb9d9e4ea796f8d1f3264f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &274163861
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274163859}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -64.51882, y: -32.360626, z: 127.372856}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &471535627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -381,6 +424,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player1Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128662069568885973, guid: 5381156143076664997d286f581c5468,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7128662069568885966, guid: 5381156143076664997d286f581c5468,
         type: 3}
@@ -1125,17 +1173,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7366008582931731378, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas_Player01_Inventory_Cards
+      objectReference: {fileID: 0}
+    - target: {fileID: 2495518410905321381, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 354d9b588e3ea144684da3f7da7c7679,
+        type: 3}
+    - target: {fileID: 3144795794147273725, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 157e66bc9fba7a74cb9b7e27412a1c0f,
+        type: 3}
     - target: {fileID: 7366008584362894558, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 5b66183575d331a48bdc290688553eb0,
         type: 3}
-    - target: {fileID: 7366008582931731378, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
-        type: 3}
-      propertyPath: m_Name
-      value: Canvas_Player01_Inventory_Cards
-      objectReference: {fileID: 0}
     - target: {fileID: 7366008582931731390, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1259,17 +1319,5 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 1440022259}
-    - target: {fileID: 2495518410905321381, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 354d9b588e3ea144684da3f7da7c7679,
-        type: 3}
-    - target: {fileID: 3144795794147273725, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 157e66bc9fba7a74cb9b7e27412a1c0f,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a3546d309b9c4c4bad0974e6ecce0ff, type: 3}
