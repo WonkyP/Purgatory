@@ -20,6 +20,13 @@ public class PlayerDataHandler : MonoBehaviour
     public Queue<Weapon_Attack> Player2ComboSet2 { get { return this.player2ComboSet2; } set { this.player2ComboSet2 = value; } }
 
 
+    // TESTING: CAN BE DELETED
+    Weapon_Attack atk1_1 = new Weapon_Attack("Attack 1_Combo1", 1, "Sure Strike");
+    Weapon_Attack atk2_1 = new Weapon_Attack("Attack 2_Combo1", 2, "Sloppy Stab");
+    Weapon_Attack atk3_1 = new Weapon_Attack("Attack 3_Combo1", 3, "Lunge");
+    Weapon_Attack atk4_1 = new Weapon_Attack("Attack 2_Combo1", 4, "Fisted Uppercut");
+    Weapon_Attack atk5_1 = new Weapon_Attack("Attack 3_Combo1", 5, "Fervent Anger");
+
     Weapon_Attack atk1_2 = new Weapon_Attack("Attack 1_Combo2", 1, "Attack");
     Weapon_Attack atk2_2 = new Weapon_Attack("Attack 2_Combo2", 2, "Attack");
     Weapon_Attack atk3_2 = new Weapon_Attack("Attack 3_Combo3", 3, "Attack");
@@ -33,6 +40,12 @@ public class PlayerDataHandler : MonoBehaviour
         }
         else if (instance != this)
             Destroy(gameObject);
+
+        player1ComboSet1.Enqueue(atk1_1);
+        player1ComboSet1.Enqueue(atk2_1);
+        player1ComboSet1.Enqueue(atk3_1);
+        player1ComboSet1.Enqueue(atk4_1);
+        player1ComboSet1.Enqueue(atk5_1);
 
         player1ComboSet2.Enqueue(atk1_2);
         player1ComboSet2.Enqueue(atk2_2);
