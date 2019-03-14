@@ -4,24 +4,26 @@ using UnityEngine;
 
 public class PlayerSystem : MonoBehaviour
 {
-    private Transform playerCamera;
-    public Transform PlayerCamera { get { return this.playerCamera; } }
+    private GameObject playerCamera;
+    public GameObject PlayerCamera { get { return this.playerCamera; } }
 
-    private Transform player;
-    public Transform Player { get { return this.player; } }
+    private GameObject player;
+    public GameObject Player { get { return this.player; } }
+
+    private GameObject PM;
+    private PlayerManager playerManager;
+    public PlayerManager PlayerManager { get { return this.playerManager; } }
 
     // Start is called before the first frame update
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
-        playerCamera = transform.Find("Camera");
-        player = transform.Find("Player");
 
+        playerCamera = transform.Find("Camera").gameObject;
+        player = transform.Find("Player").gameObject;
+        PM = transform.Find("PlayerManager").gameObject;
+
+        playerManager = PM.GetComponent<PlayerManager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

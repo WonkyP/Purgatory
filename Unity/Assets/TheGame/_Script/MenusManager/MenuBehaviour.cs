@@ -10,8 +10,8 @@ public class MenuBehaviour : MonoBehaviour
     public GameObject AudioManagerObject;
     private GameObject PauseMenu;
 
-    [SerializeField]
-    private PlayerManager playerManager;
+    //[SerializeField]
+    //private PlayerManager playerManager;
 
     [SerializeField]
     private PlayerSystem player1System;
@@ -43,14 +43,14 @@ public class MenuBehaviour : MonoBehaviour
 
     public void GoToArena()
     {
-        playerManager.ComboSystem.createComboQueue(playerManager.CurrentComboSet1, playerManager.ComboSet1);
-        PlayerDataHandler.instance.saveComboSet1(1, playerManager.ComboSet1);
+        player1System.PlayerManager.ComboSystem.createComboQueue(player1System.PlayerManager.CurrentComboSet1, player1System.PlayerManager.ComboSet1);
+        //PlayerDataHandler.instance.saveComboSet1(1, player1System.PlayerManager.ComboSet1);
         //playerManager.ComboSystem.createComboQueue(playerManager.CurrentComboSet2, playerManager.ComboSet2);
         SceneManager.LoadScene(2);
 
         // We activate the camera and the player
-        player1System.PlayerCamera.gameObject.SetActive(true);
-        player1System.Player.gameObject.SetActive(true);
+        player1System.PlayerCamera.SetActive(true);
+        player1System.Player.SetActive(true);
 
         AudioManagerObject.GetComponent<AudioManager>().ArenaStart();
     }
