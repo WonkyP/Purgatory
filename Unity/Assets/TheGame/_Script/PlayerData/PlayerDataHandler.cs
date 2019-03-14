@@ -42,7 +42,7 @@ public class PlayerDataHandler : MonoBehaviour
     public Queue<Weapon_Attack> getComboSet1(int playerId)
     {
         if (playerId == 1)
-            return Player1ComboSet1;
+            return player1ComboSet1;
         else
             return player2ComboSet1;
     }
@@ -50,7 +50,7 @@ public class PlayerDataHandler : MonoBehaviour
     public Queue<Weapon_Attack> getComboSet2(int playerId)
     {
         if (playerId == 1)
-            return Player1ComboSet2;
+            return player1ComboSet2;
         else
             return player2ComboSet2;
     }

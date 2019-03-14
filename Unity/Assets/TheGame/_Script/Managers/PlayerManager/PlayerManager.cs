@@ -109,8 +109,6 @@ public class PlayerManager : MonoBehaviour
         comboSystem = GetComponent<ComboSystem>();
         healthScript = GetComponent<Health>();
 
-        Debug.Log(comboSet1.Peek().Tag);
-
         //comboSystem.addAttackToCombo(CurrentComboSet1, atk1_1);
         //comboSystem.addAttackToCombo(CurrentComboSet1, atk2_1);
         //comboSystem.addAttackToCombo(CurrentComboSet1, atk3_1);
