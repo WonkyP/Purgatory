@@ -44,7 +44,7 @@ public class MenuBehaviour : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    public void NextScreen()
+    public void GoToInventory()
     {
         SceneManager.LoadScene(2);
     }
