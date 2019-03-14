@@ -46,7 +46,7 @@ public class MenuBehaviour : MonoBehaviour
 
     public void GoToInventory()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     public void GoToArena()
