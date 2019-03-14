@@ -17,6 +17,9 @@ public class MenuBehaviour : MonoBehaviour
     private PlayerSystem player1System;
 
     [SerializeField]
+    private PlayerSystem player2System;
+
+    [SerializeField]
     private SplitScreen splitScreen;
 
 
@@ -56,6 +59,10 @@ public class MenuBehaviour : MonoBehaviour
         // We activate the camera and the player
         player1System.PlayerCamera.SetActive(true);
         player1System.Player.SetActive(true);
+
+        player2System.PlayerCamera.SetActive(true);
+        player2System.Player.SetActive(true);
+
         splitScreen.MainHealthCanvas.SetActive(true);
 
         AudioManagerObject.GetComponent<AudioManager>().ArenaStart();
