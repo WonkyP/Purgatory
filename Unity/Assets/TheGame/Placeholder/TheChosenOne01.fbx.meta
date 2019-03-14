@@ -116,6 +116,7 @@ ModelImporter:
     100220: Ulna.L.001
     100222: Ulna.R
     100224: Ulna.R.001
+    100226: Human
     400000: Armature
     400002: Clavicle.L
     400004: Clavicle.R
@@ -229,11 +230,16 @@ ModelImporter:
     400220: Ulna.L.001
     400222: Ulna.R
     400224: Ulna.R.001
+    400226: Human
     2100000: No Name
+    2100002: Human
     2300000: Rapier01_Cube
+    2300002: Human
     3300000: Rapier01_Cube
+    3300002: Human
     4300000: Rapier01_Cube
     4300002: TheChosenOne
+    4300004: Human
     7400000: Armature|Combat_Attack_FerventAnger
     7400002: Armature|Combat_Attack_FistedUpperCut
     7400004: Armature|Combat_Attack_LungeV1
