@@ -194,6 +194,11 @@ PrefabInstance:
       propertyPath: splitScreen
       value: 
       objectReference: {fileID: 259867888}
+    - target: {fileID: 6680198956993526836, guid: 8cfdbe49248a1e049b947b1b061a7ac1,
+        type: 3}
+      propertyPath: player2System
+      value: 
+      objectReference: {fileID: 1537547448}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cfdbe49248a1e049b947b1b061a7ac1, type: 3}
 --- !u!114 &19212414 stripped
@@ -574,6 +579,11 @@ PrefabInstance:
         type: 3}
       propertyPath: testingWithKeyBoard
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091378214720942583, guid: b956c7850cb7f12478d487b62d6e920d,
+        type: 3}
+      propertyPath: testingWithKeyBoard
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b956c7850cb7f12478d487b62d6e920d, type: 3}
@@ -981,6 +991,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a81752be21cd76c4a9477e827352d6bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1537547448 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4951890965931572053, guid: b956c7850cb7f12478d487b62d6e920d,
+    type: 3}
+  m_PrefabInstance: {fileID: 483622894}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ac9f59777085047890fbf948eeb5f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1725791690
