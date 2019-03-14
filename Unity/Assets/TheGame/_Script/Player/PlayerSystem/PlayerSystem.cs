@@ -17,11 +17,10 @@ public class PlayerSystem : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
-
         playerCamera = transform.Find("Camera").gameObject;
         player = transform.Find("Player").gameObject;
         PM = transform.Find("PlayerManager").gameObject;
+
 
         playerManager = PM.GetComponent<PlayerManager>();
     }

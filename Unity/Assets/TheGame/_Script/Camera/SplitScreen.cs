@@ -13,6 +13,15 @@ public class SplitScreen : MonoBehaviour
 
     public Camera[] activeCameras;
 
+    private GameObject mainHealthCanvas;
+    public GameObject MainHealthCanvas { get { return this.mainHealthCanvas; } }
+
+    private GameObject player1;
+    private PlayerSystem player1System;
+
+    private GameObject player2;
+    private PlayerSystem player2System;
+
 
     public bool Vertical // property, it is called when the variable itself is changed
     {
@@ -27,12 +36,24 @@ public class SplitScreen : MonoBehaviour
         }
     }
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+
+        mainHealthCanvas = transform.Find("MainHealthCanvas").gameObject;
+        player1 = transform.Find("Player1System").gameObject;
+        player2 = transform.Find("Player2System").gameObject;
+
+        player1System = player1.GetComponent<PlayerSystem>();
+        player2System = player2.GetComponent<PlayerSystem>();
+    }
+
     void Start()
     {
         activeCameras = GetComponentsInChildren<Camera>();// take tha cameras on the camera setting object and save a reference to them to work with them
 
-        player1Camera = activeCameras[0];
-        player2Camera = activeCameras[1];
+        player1Camera = player1System.PlayerCamera.GetComponent<Camera>();
+        player2Camera = player2System.PlayerCamera.GetComponent<Camera>();
 
         ModifyCameraDisplay(Vertical); //Set the default values of the screeen to horizontal mode;
     }

@@ -16,6 +16,11 @@ public class MenuBehaviour : MonoBehaviour
     [SerializeField]
     private PlayerSystem player1System;
 
+    [SerializeField]
+    private SplitScreen splitScreen;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +56,7 @@ public class MenuBehaviour : MonoBehaviour
         // We activate the camera and the player
         player1System.PlayerCamera.SetActive(true);
         player1System.Player.SetActive(true);
+        splitScreen.MainHealthCanvas.SetActive(true);
 
         AudioManagerObject.GetComponent<AudioManager>().ArenaStart();
     }
