@@ -196,46 +196,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 102377039757330690}
     m_Modifications:
-    - target: {fileID: 7556074465965097554, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_Name
-      value: Text Player 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8980625320964252784, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 8002754101736077762}
-    - target: {fileID: 2862213102851016202, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2862213102851016202, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2862213102851016202, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2862213102851016202, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 29
-      objectReference: {fileID: 0}
-    - target: {fileID: 2862213102851016202, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: -106.899994
-      objectReference: {fileID: 0}
-    - target: {fileID: 6134220012984187784, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_Name
-      value: Panel Player 2
-      objectReference: {fileID: 0}
     - target: {fileID: 9042541803799483440, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
       propertyPath: m_NormalizedViewPortRect.height
@@ -331,16 +291,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2931277917921032764, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+    - target: {fileID: 7556074465965097554, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
-      propertyPath: topHeadHealthBar
-      value: 
-      objectReference: {fileID: 222096405840513988}
-    - target: {fileID: 2931277917921032764, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+      propertyPath: m_Name
+      value: Text Player 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980625320964252784, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
-      propertyPath: mainHelathBar
+      propertyPath: m_TargetGraphic
       value: 
-      objectReference: {fileID: 4591936523492902160}
+      objectReference: {fileID: 8002754101736077762}
+    - target: {fileID: 2862213102851016202, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862213102851016202, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862213102851016202, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862213102851016202, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862213102851016202, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -106.899994
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134220012984187784, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: m_Name
+      value: Panel Player 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1474879975583442488, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
       propertyPath: m_Name
@@ -830,33 +820,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6413833492898603086, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6413833492898603086, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6413833492898603086, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6413833492898603086, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6413833492898603086, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6413833492898603086, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
       propertyPath: m_LocalScale.z
-      value: 0
+      value: 0.008
       objectReference: {fileID: 0}
     - target: {fileID: 6413833492898603086, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
@@ -880,34 +845,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6413833492898603086, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6413833492898603086, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 356
       objectReference: {fileID: 0}
     - target: {fileID: 6413833492898603086, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6413833492898603086, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6413833492898603086, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_Pivot.y
-      value: 0
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 3446446477720116943, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
       propertyPath: animator_
       value: 
       objectReference: {fileID: 21417358220360159}
+    - target: {fileID: 8370051678484890330, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: topHeadHealthBar
+      value: 
+      objectReference: {fileID: 222096405840513988}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4936fc5338b1e2a47a6ac97770b10fa8, type: 3}
 --- !u!4 &197233304276389174 stripped
@@ -1481,21 +1436,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 102377039757330690}
     m_Modifications:
-    - target: {fileID: 7556074465965097554, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_Name
-      value: Text Player 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8980625320964252784, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 6306192968949223678}
-    - target: {fileID: 6134220012984187784, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
-        type: 3}
-      propertyPath: m_Name
-      value: PanelPlayer1
-      objectReference: {fileID: 0}
     - target: {fileID: 9042541803799483440, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -1586,16 +1526,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2931277917921032764, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+    - target: {fileID: 7556074465965097554, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
-      propertyPath: topHeadHealthBar
-      value: 
-      objectReference: {fileID: 4295990813911704312}
-    - target: {fileID: 2931277917921032764, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+      propertyPath: m_Name
+      value: Text Player 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980625320964252784, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
-      propertyPath: mainHelathBar
+      propertyPath: m_TargetGraphic
       value: 
-      objectReference: {fileID: 8944747155823632390}
+      objectReference: {fileID: 6306192968949223678}
+    - target: {fileID: 6134220012984187784, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: m_Name
+      value: PanelPlayer1
+      objectReference: {fileID: 0}
     - target: {fileID: 1474879975583442488, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
         type: 3}
       propertyPath: m_Name
@@ -2093,6 +2038,11 @@ PrefabInstance:
       propertyPath: animator_
       value: 
       objectReference: {fileID: 4091363693689819363}
+    - target: {fileID: 8370051678484890330, guid: 4936fc5338b1e2a47a6ac97770b10fa8,
+        type: 3}
+      propertyPath: topHeadHealthBar
+      value: 
+      objectReference: {fileID: 4295990813911704312}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4936fc5338b1e2a47a6ac97770b10fa8, type: 3}
 --- !u!20 &94098574986543868 stripped
