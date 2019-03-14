@@ -74,14 +74,14 @@ MonoBehaviour:
       id: 2
       image: {fileID: 0}
       description: 
-      attackAnimation: Attack
+      attackAnimation: Fervent Anger
       weaponAttackStats:
         weapon_Power: 0
     - tag: Sure Strike
       id: 3
       image: {fileID: 0}
       description: 
-      attackAnimation: Attack
+      attackAnimation: Sure Strike
       weaponAttackStats:
         weapon_Power: 0
     spellAttacks:

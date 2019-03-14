@@ -79,6 +79,7 @@ public class AttackState : State
         player.PlayerManager.ComboSystem.executeComboSet(combo);
         player.PlayerManager.ComboSystem.advanceComboSet(auxCombo);
         timeLastButtonPressed = Time.time;
+        Debug.Log("elo");
     }
 
     public override void OnStateEnter()

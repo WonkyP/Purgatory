@@ -94,4 +94,9 @@ public class Player : MonoBehaviour
     //{
     //    return attackInput2;
     //}
+
+    public void GettingHit(float Damage)
+    {
+        print("Player" + player_Id + " took " + Damage + " Damage");
+    }
 }
