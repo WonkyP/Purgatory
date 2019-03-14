@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuBehaviour : MonoBehaviour
 {
+    public static MenuBehaviour instance;
+
     public GameObject AudioManagerObject;
     private GameObject PauseMenu;
 
@@ -23,6 +25,18 @@ public class MenuBehaviour : MonoBehaviour
     private SplitScreen splitScreen;
 
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+
+        if (instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            instance = this;
+        }
+        else if (instance != this)
+            Destroy(gameObject);
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -47,6 +61,14 @@ public class MenuBehaviour : MonoBehaviour
     public void GoToInventory()
     {
         SceneManager.LoadScene(1);
+
+        player1System.PlayerCamera.SetActive(false);
+        player1System.Player.SetActive(false);
+
+        player2System.PlayerCamera.SetActive(false);
+        player2System.Player.SetActive(false);
+
+        splitScreen.MainHealthCanvas.SetActive(false);
     }
 
     public void GoToArena()
