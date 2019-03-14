@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void takeDamage(int currentLife, int player_Id)
+    public void takeDamage(float currentLife, int player_Id)
     {
         if(currentLife <= 0)
         {

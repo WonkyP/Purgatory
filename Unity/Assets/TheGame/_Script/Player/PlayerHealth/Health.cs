@@ -13,7 +13,7 @@ public class Health : MonoBehaviour
 
     public int maxHealth = 100;
     int damageReceived = 10;
-    int health;
+    float health;
 
     public bool damaged = false;
     // Start is called before the first frame update
@@ -36,7 +36,7 @@ public class Health : MonoBehaviour
         ///////////////
     }
 
-    public void takeDamage(int damageReceived)
+    public void takeDamage(float damageReceived)
     {
         health -= damageReceived;
 

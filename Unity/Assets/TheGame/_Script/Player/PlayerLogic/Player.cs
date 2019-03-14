@@ -98,5 +98,6 @@ public class Player : MonoBehaviour
     public void GettingHit(float Damage)
     {
         print("Player" + player_Id + " took " + Damage + " Damage");
+        PlayerManager.HealthScript.takeDamage(Damage);
     }
 }
