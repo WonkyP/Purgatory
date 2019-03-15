@@ -49,6 +49,10 @@ public class ObjectIdentifier : MonoBehaviour
 
     TwoHandedWeapon twoHandedWeapon;
 
+    private void Start()
+    {
+        inventoryManager = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<InventoryManager>();
+    }
 
     public void itemSelected()
     {
