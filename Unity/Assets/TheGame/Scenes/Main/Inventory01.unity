@@ -647,7 +647,6 @@ GameObject:
   m_Component:
   - component: {fileID: 504460498}
   - component: {fileID: 504460497}
-  - component: {fileID: 504460496}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -655,14 +654,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &504460496
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 504460495}
-  m_Enabled: 1
 --- !u!20 &504460497
 Camera:
   m_ObjectHideFlags: 0
@@ -1433,29 +1424,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7366008582931731378, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
-        type: 3}
-      propertyPath: m_Name
-      value: Canvas_Player01_Inventory_Cards
-      objectReference: {fileID: 0}
-    - target: {fileID: 2495518410905321381, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 354d9b588e3ea144684da3f7da7c7679,
-        type: 3}
-    - target: {fileID: 3144795794147273725, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 157e66bc9fba7a74cb9b7e27412a1c0f,
-        type: 3}
     - target: {fileID: 7366008584362894558, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 5b66183575d331a48bdc290688553eb0,
         type: 3}
+    - target: {fileID: 7366008582931731378, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas_Player01_Inventory_Cards
+      objectReference: {fileID: 0}
     - target: {fileID: 7366008582931731390, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1579,5 +1558,17 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 1440022259}
+    - target: {fileID: 2495518410905321381, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 354d9b588e3ea144684da3f7da7c7679,
+        type: 3}
+    - target: {fileID: 3144795794147273725, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 157e66bc9fba7a74cb9b7e27412a1c0f,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a3546d309b9c4c4bad0974e6ecce0ff, type: 3}
