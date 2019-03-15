@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -144,6 +144,11 @@ PrefabInstance:
       propertyPath: player2System
       value: 
       objectReference: {fileID: 1537547448}
+    - target: {fileID: 6680198956993526836, guid: 8cfdbe49248a1e049b947b1b061a7ac1,
+        type: 3}
+      propertyPath: ArenaButton
+      value: 
+      objectReference: {fileID: 1939990965}
     - target: {fileID: 6680198956993526837, guid: 8cfdbe49248a1e049b947b1b061a7ac1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1119,6 +1124,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1939990965 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7366008584206772508, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+    type: 3}
+  m_PrefabInstance: {fileID: 7366008584437862932}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1950510498 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4494501912211410052, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
