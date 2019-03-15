@@ -21,12 +21,16 @@ public class Health : MonoBehaviour
     {
         playerManager = GetComponent<PlayerManager>();
         health = maxHealth;
+
     }
 
     private void OnLevelWasLoaded(int level)
     {
         health = maxHealth;
-        takeDamage(0);
+        if (GameManager.instance != null)
+        {
+            takeDamage(0);
+        }
     }
 
     // Update is called once per frame
@@ -49,7 +53,9 @@ public class Health : MonoBehaviour
         topHeadHealthBar.sizeDelta = new Vector2(health * 2, topHeadHealthBar.sizeDelta.y);
         mainHelathBar.sizeDelta = new Vector2(health * 2, topHeadHealthBar.sizeDelta.y);
 
-        GameManager.instance.takeDamage(health, playerManager.Player_id);
-
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.takeDamage(health, playerManager.Player_id);
+        }
     }
 }

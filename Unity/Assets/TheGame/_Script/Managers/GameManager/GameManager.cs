@@ -13,9 +13,12 @@ public class GameManager : MonoBehaviour
     public Text player1Text;
     public Text player2Text;
 
-    void Start()
+    private void Awake()
     {
         instance = this;
+    }
+    void Start()
+    {
         panelPlayer1.SetActive(false);
         panelPlayer2.SetActive(false);
     }
@@ -39,6 +42,7 @@ public class GameManager : MonoBehaviour
         panelPlayer1.SetActive(false);
         panelPlayer2.SetActive(false);
     }
+
     public void takeDamage(float currentLife, int player_Id)
     {
         if(currentLife <= 0)
