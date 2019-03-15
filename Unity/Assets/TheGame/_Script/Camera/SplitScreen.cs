@@ -55,6 +55,7 @@ public class SplitScreen : MonoBehaviour
 
         player1System = player1.GetComponent<PlayerSystem>();
         player2System = player2.GetComponent<PlayerSystem>();
+
     }
 
     void Start()
