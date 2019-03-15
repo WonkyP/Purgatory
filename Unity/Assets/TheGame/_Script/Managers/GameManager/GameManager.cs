@@ -49,18 +49,6 @@ public class GameManager : MonoBehaviour
         {
             panelPlayer1.SetActive(true);
             panelPlayer2.SetActive(true);
-
-            if(player_Id == 1)
-            {
-                player1Text.text = "You DIED"; 
-                player2Text.text = "You WON";
-            }
-            else
-            {
-
-                 player1Text.text = "You WON";
-                 player2Text.text = "You DIED";
-            }
         }
     }
 }
