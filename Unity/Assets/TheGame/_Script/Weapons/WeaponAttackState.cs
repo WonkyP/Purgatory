@@ -13,6 +13,6 @@ public class WeaponAttackState : MonoBehaviour
     }
     public void turnColliderOff()
     {
-        WeaponCollider.enabled = true;
+        WeaponCollider.enabled = false;
     }
 }
