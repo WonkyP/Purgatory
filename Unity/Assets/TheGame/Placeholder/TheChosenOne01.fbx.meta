@@ -117,6 +117,9 @@ ModelImporter:
     100222: Ulna.R
     100224: Ulna.R.001
     100226: Human
+    100228: Leaf_Sword
+    100230: Weapon.R
+    100232: Weapon.R_end
     400000: Armature
     400002: Clavicle.L
     400004: Clavicle.R
@@ -231,15 +234,22 @@ ModelImporter:
     400222: Ulna.R
     400224: Ulna.R.001
     400226: Human
+    400228: Leaf_Sword
+    400230: Weapon.R
+    400232: Weapon.R_end
     2100000: No Name
     2100002: Human
+    2100004: Leaf_Sword
     2300000: Rapier01_Cube
     2300002: Human
+    2300004: Leaf_Sword
     3300000: Rapier01_Cube
     3300002: Human
+    3300004: Leaf_Sword
     4300000: Rapier01_Cube
     4300002: TheChosenOne
     4300004: Human
+    4300006: Leaf_Sword
     7400000: Armature|Combat_Attack_FerventAnger
     7400002: Armature|Combat_Attack_FistedUpperCut
     7400004: Armature|Combat_Attack_LungeV1
@@ -253,8 +263,14 @@ ModelImporter:
     7400020: Armature|OldCombat_Attack_SureStrike
     7400022: Armature|oldCombat_Movement_Idle
     7400024: Armature|Combat_Movement_ShieldWalkdForward
+    7400026: Armature|Combat_Attack_SpinningJump
+    7400028: Armature|Combat_Movement_Stagger01
+    7400030: Armature|Combat_Movement_Stagger02
+    7400032: Armature|Combat_Attack_DownwardStrike
+    7400034: Armature|Combat_Attack_FullSwing
     9500000: //RootNode
     13700000: TheChosenOne
+    13700002: Human
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -549,6 +565,146 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Combat_Attack_SpinningJump
+      takeName: Armature|Combat_Attack_SpinningJump
+      firstFrame: 0
+      lastFrame: 175
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Combat_Movement_Stagger01
+      takeName: Armature|Combat_Movement_Stagger01
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Combat_Movement_Stagger02
+      takeName: Armature|Combat_Movement_Stagger02
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Combat_Attack_DownwardStrike
+      takeName: Armature|Combat_Attack_DownwardStrike
+      firstFrame: 0
+      lastFrame: 108
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Combat_Attack_FullSwing
+      takeName: Armature|Combat_Attack_FullSwing
+      firstFrame: 0
+      lastFrame: 159
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
