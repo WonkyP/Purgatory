@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         instance = this;
+        panelPlayer1.SetActive(false);
+        panelPlayer2.SetActive(false);
     }
 
 
