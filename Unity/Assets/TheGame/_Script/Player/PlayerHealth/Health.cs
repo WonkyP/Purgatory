@@ -23,6 +23,12 @@ public class Health : MonoBehaviour
         health = maxHealth;
     }
 
+    private void OnLevelWasLoaded(int level)
+    {
+        health = maxHealth;
+        takeDamage(0);
+    }
+
     // Update is called once per frame
     void Update()
     {
