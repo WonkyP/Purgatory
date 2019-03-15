@@ -40,7 +40,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5041472741597227282}
   - component: {fileID: 5041472741597227283}
-  - component: {fileID: 5041472741597227276}
   - component: {fileID: 5041472741597227281}
   m_Layer: 0
   m_Name: Camera
@@ -106,14 +105,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &5041472741597227276
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5041472741597227277}
-  m_Enabled: 1
 --- !u!114 &5041472741597227281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,10 +119,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   player: {fileID: 0}
-  smoothLevel: 100
-  offset: {x: 0, y: 0, z: 0}
-  maxAngle: 45
-  minAngle: 60
+  cameraOffsetY: 0
+  cameraOffsetZ: 0
+  returnToDefault: 0
   horizontalRotationSpeed: 4
   verticalRotationSpeed: 1
   pivot: {fileID: 5041472740949554912}
