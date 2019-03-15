@@ -10,9 +10,6 @@ public class GameManager : MonoBehaviour
     public GameObject panelPlayer1;
     public GameObject panelPlayer2;
 
-    public Text player1Text;
-    public Text player2Text;
-
     private void Awake()
     {
         instance = this;
