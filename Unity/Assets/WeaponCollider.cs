@@ -14,8 +14,10 @@ public class WeaponCollider : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        print(other.gameObject);
         if (other.tag == "Player")
         {
+            print(other);
             Player pS = other.GetComponent<Player>();
             if (pS.Player_Id != playerId)
             {
