@@ -12,6 +12,8 @@ public class MenuBehaviour : MonoBehaviour
     public GameObject AudioManagerObject;
     private GameObject PauseMenu;
 
+    public Button ArenaButton;
+
     //[SerializeField]
     //private PlayerManager playerManager;
 
@@ -43,6 +45,28 @@ public class MenuBehaviour : MonoBehaviour
         }
         else if (instance != this)
             Destroy(gameObject);
+    }
+
+    // called first
+    void OnEnable()
+    {
+        Debug.Log("OnEnable called");
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    // called second
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log("OnSceneLoaded: " + scene.name);
+        Debug.Log(mode);
+
+        // Assign button functions
+        if(scene.name == "Inventory01")
+        {
+            ArenaButton = GameObject.Find("Canvas_Player01_Inventory_Cards").transform.GetChild(1).GetComponent<Button>();
+            ArenaButton.onClick.AddListener(GoToArena);
+        }
+        
     }
 
     // Start is called before the first frame update
