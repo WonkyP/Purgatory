@@ -97,7 +97,7 @@ public class AttackState : State
     {
         // When we exit from this state, we reset the combos
         player.PlayerManager.ComboSystem.restartCombo(player.PlayerManager.ComboSet1);
-        player.PlayerManager.ComboSystem.restartCombo(player.PlayerManager.ComboSet2);
+        //player.PlayerManager.ComboSystem.restartCombo(player.PlayerManager.ComboSet2);
     }
 
 }

@@ -47,6 +47,13 @@ public class InventoryManager : MonoBehaviour
         emptyPlayerCombos();
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+            Debug.Log(comboSetNames1[0].text);
+           
+    }
+
     // Method to update player's helmet
     public void updatePlayerHelmet(Helmet h)
     {
