@@ -30,6 +30,12 @@ public class ComboSystem : MonoBehaviour
         currentComboSet.Remove(attack);
     }
 
+    public void emptyCombos(List<Weapon_Attack> currentComboSet, Queue<Weapon_Attack> comboset)
+    {
+        currentComboSet.Clear();
+        comboset.Clear();
+    }
+
     public void createComboQueue(List<Weapon_Attack> currentComboSet, Queue<Weapon_Attack> comboSet)
     {
         Weapon_Attack attack;

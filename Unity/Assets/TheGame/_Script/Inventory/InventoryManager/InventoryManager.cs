@@ -32,6 +32,11 @@ public class InventoryManager : MonoBehaviour
     private OneHandedWeapon defaultOneHandedWeapon = new OneHandedWeapon("Default", -1);
     private TwoHandedWeapon defaultTwoHandedWeapon = new TwoHandedWeapon("Default", -1);
 
+    private void Start()
+    {
+        emptyPlayerCombos();
+    }
+
     // Method to update player's helmet
     public void updatePlayerHelmet(Helmet h)
     {
@@ -108,5 +113,13 @@ public class InventoryManager : MonoBehaviour
     public void PlayerTwoHandedWeaponToDefault()
     {
         playerManager.CurrentTwoHandedWeapon = defaultTwoHandedWeapon;
+    }
+
+    // Method to restart all the attacks the player has equiped before
+    public void emptyPlayerCombos()
+    {
+        cardNames.Clear();
+        playerManager.ComboSystem.emptyCombos(playerManager.CurrentComboSet1, playerManager.ComboSet1);
+        playerManager.ComboSystem.emptyCombos(playerManager.CurrentComboSet2, playerManager.ComboSet2);
     }
 }

@@ -24,6 +24,13 @@ public class MenuBehaviour : MonoBehaviour
     [SerializeField]
     private SplitScreen splitScreen;
 
+    //------------------------------------------------------
+    // TESTING: CAN BE DELETED
+    Weapon_Attack atk1_2 = new Weapon_Attack("Attack 1_Combo2", 1, "Attack");
+    Weapon_Attack atk2_2 = new Weapon_Attack("Attack 2_Combo2", 2, "Attack");
+    Weapon_Attack atk3_2 = new Weapon_Attack("Attack 3_Combo3", 3, "Attack");
+    //------------------------------------------------------
+
 
     private void Awake()
     {
@@ -69,6 +76,8 @@ public class MenuBehaviour : MonoBehaviour
         player2System.Player.SetActive(false);
 
         splitScreen.MainHealthCanvas.SetActive(false);
+
+       
     }
 
     public void GoToArena()
@@ -76,6 +85,14 @@ public class MenuBehaviour : MonoBehaviour
         player1System.PlayerManager.ComboSystem.createComboQueue(player1System.PlayerManager.CurrentComboSet1, player1System.PlayerManager.ComboSet1);
         //PlayerDataHandler.instance.saveComboSet1(1, player1System.PlayerManager.ComboSet1);
         //playerManager.ComboSystem.createComboQueue(playerManager.CurrentComboSet2, playerManager.ComboSet2);
+
+        // TESTING
+        player1System.PlayerManager.ComboSystem.addAttackToCombo(player1System.PlayerManager.CurrentComboSet2, atk1_2);
+        player1System.PlayerManager.ComboSystem.addAttackToCombo(player1System.PlayerManager.CurrentComboSet2, atk2_2);
+        player1System.PlayerManager.ComboSystem.addAttackToCombo(player1System.PlayerManager.CurrentComboSet2, atk3_2);
+        player1System.PlayerManager.ComboSystem.createComboQueue(player1System.PlayerManager.CurrentComboSet2, player1System.PlayerManager.ComboSet2);
+        // TESTING
+
         SceneManager.LoadScene(2);
 
         // We activate the camera and the player
