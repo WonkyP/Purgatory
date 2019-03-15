@@ -11,7 +11,7 @@ public class SplitScreen : MonoBehaviour
     Camera player1Camera;
     Camera player2Camera;
 
-    public Camera[] activeCameras;
+    //public Camera[] activeCameras;
 
     private GameObject mainHealthCanvas;
     public GameObject MainHealthCanvas { get { return this.mainHealthCanvas; } }
@@ -21,6 +21,8 @@ public class SplitScreen : MonoBehaviour
 
     private GameObject player2;
     private PlayerSystem player2System;
+
+    private static SplitScreen instance;
 
 
     public bool Vertical // property, it is called when the variable itself is changed
@@ -38,7 +40,14 @@ public class SplitScreen : MonoBehaviour
 
     private void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+        if (instance == null)
+        {
+            DontDestroyOnLoad(this.gameObject);
+            instance = this;
+        }
+        else if (instance != this)
+            Destroy(gameObject);
+
 
         mainHealthCanvas = transform.Find("MainHealthCanvas").gameObject;
         player1 = transform.Find("Player1System").gameObject;
@@ -50,7 +59,7 @@ public class SplitScreen : MonoBehaviour
 
     void Start()
     {
-        activeCameras = GetComponentsInChildren<Camera>();// take tha cameras on the camera setting object and save a reference to them to work with them
+        //activeCameras = GetComponentsInChildren<Camera>();// take tha cameras on the camera setting object and save a reference to them to work with them
 
         player1Camera = player1System.PlayerCamera.GetComponent<Camera>();
         player2Camera = player2System.PlayerCamera.GetComponent<Camera>();
