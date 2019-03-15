@@ -485,6 +485,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SplitScreenSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 7967951350408594634, guid: b956c7850cb7f12478d487b62d6e920d,
+        type: 3}
+      propertyPath: m_TagString
+      value: SplitScreenSystem
+      objectReference: {fileID: 0}
     - target: {fileID: 102377039757330690, guid: b956c7850cb7f12478d487b62d6e920d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -634,6 +639,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823001618254420424, guid: b956c7850cb7f12478d487b62d6e920d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player2System
+      objectReference: {fileID: 0}
+    - target: {fileID: 7513150409445994740, guid: b956c7850cb7f12478d487b62d6e920d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player1System
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b956c7850cb7f12478d487b62d6e920d, type: 3}

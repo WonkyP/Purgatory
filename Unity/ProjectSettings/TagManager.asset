@@ -11,6 +11,10 @@ TagManager:
   - AudioManager
   - AaronTestTag
   - Button
+  - InventoryManager
+  - Player1System
+  - Player2System
+  - SplitScreenSystem
   layers:
   - Default
   - TransparentFX

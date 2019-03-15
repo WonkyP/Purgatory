@@ -60,11 +60,17 @@ public class MenuBehaviour : MonoBehaviour
         Debug.Log("OnSceneLoaded: " + scene.name);
         Debug.Log(mode);
 
-        // Assign button functions
+        // Assign references on Scene Load
         if(scene.name == "Inventory01")
         {
             ArenaButton = GameObject.Find("Canvas_Player01_Inventory_Cards").transform.GetChild(1).GetComponent<Button>();
             ArenaButton.onClick.AddListener(GoToArena);
+
+
+            player1System = GameObject.FindGameObjectWithTag("Player1System").GetComponent<PlayerSystem>();
+            player2System = GameObject.FindGameObjectWithTag("Player2System").GetComponent<PlayerSystem>();
+
+            splitScreen = GameObject.FindGameObjectWithTag("SplitScreenSystem").GetComponent<SplitScreen>();
         }
         
     }
