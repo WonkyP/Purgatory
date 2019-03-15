@@ -34,7 +34,11 @@ public class GameManager : MonoBehaviour
         panelPlayer2.SetActive(false);
     }
 
-    
+    private void OnLevelWasLoaded(int level)
+    {
+        panelPlayer1.SetActive(false);
+        panelPlayer2.SetActive(false);
+    }
     public void takeDamage(float currentLife, int player_Id)
     {
         if(currentLife <= 0)
