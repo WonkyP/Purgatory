@@ -32,8 +32,18 @@ public class InventoryManager : MonoBehaviour
     private OneHandedWeapon defaultOneHandedWeapon = new OneHandedWeapon("Default", -1);
     private TwoHandedWeapon defaultTwoHandedWeapon = new TwoHandedWeapon("Default", -1);
 
+    private static InventoryManager instance;
+
     private void Start()
     {
+        if (instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            instance = this;
+        }
+        else if (instance != this)
+            Destroy(gameObject);
+
         emptyPlayerCombos();
     }
 
