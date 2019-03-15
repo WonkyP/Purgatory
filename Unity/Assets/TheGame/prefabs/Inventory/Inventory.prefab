@@ -67,7 +67,7 @@ MonoBehaviour:
       id: 1
       image: {fileID: 0}
       description: 
-      attackAnimation: Attack
+      attackAnimation: Crackling Sweep
       weaponAttackStats:
         weapon_Power: 0
     - tag: Fervent Anger

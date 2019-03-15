@@ -122,7 +122,7 @@ BoxCollider:
   m_GameObject: {fileID: 5975185780772696922}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0.3}
   m_Center: {x: 0, y: 0, z: 0}
@@ -137,13 +137,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1
+  m_Height: 2
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.44, z: 0}
 --- !u!95 &8971125389823105390
 Animator:
   serializedVersion: 3
@@ -3282,6 +3282,7 @@ GameObject:
   - component: {fileID: 9119639018949373635}
   - component: {fileID: 8673748822656822516}
   - component: {fileID: 7130947573412538844}
+  - component: {fileID: 1096580406071225158}
   m_Layer: 0
   m_Name: Rapier01_Cube
   m_TagString: Untagged
@@ -3374,6 +3375,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerScript: {fileID: 0}
+--- !u!54 &1096580406071225158
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9119639018951569889}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &9119639018951569891
 GameObject:
   m_ObjectHideFlags: 0
