@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -124,6 +124,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6680198956993526836, guid: 8cfdbe49248a1e049b947b1b061a7ac1,
+        type: 3}
+      propertyPath: playerManager
+      value: 
+      objectReference: {fileID: 2069895030}
+    - target: {fileID: 6680198956993526836, guid: 8cfdbe49248a1e049b947b1b061a7ac1,
+        type: 3}
+      propertyPath: player1System
+      value: 
+      objectReference: {fileID: 1986534482}
+    - target: {fileID: 6680198956993526836, guid: 8cfdbe49248a1e049b947b1b061a7ac1,
+        type: 3}
+      propertyPath: splitScreen
+      value: 
+      objectReference: {fileID: 259867888}
+    - target: {fileID: 6680198956993526836, guid: 8cfdbe49248a1e049b947b1b061a7ac1,
+        type: 3}
+      propertyPath: player2System
+      value: 
+      objectReference: {fileID: 1537547448}
     - target: {fileID: 6680198956993526837, guid: 8cfdbe49248a1e049b947b1b061a7ac1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -179,26 +199,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6680198956993526836, guid: 8cfdbe49248a1e049b947b1b061a7ac1,
-        type: 3}
-      propertyPath: playerManager
-      value: 
-      objectReference: {fileID: 2069895030}
-    - target: {fileID: 6680198956993526836, guid: 8cfdbe49248a1e049b947b1b061a7ac1,
-        type: 3}
-      propertyPath: player1System
-      value: 
-      objectReference: {fileID: 1986534482}
-    - target: {fileID: 6680198956993526836, guid: 8cfdbe49248a1e049b947b1b061a7ac1,
-        type: 3}
-      propertyPath: splitScreen
-      value: 
-      objectReference: {fileID: 259867888}
-    - target: {fileID: 6680198956993526836, guid: 8cfdbe49248a1e049b947b1b061a7ac1,
-        type: 3}
-      propertyPath: player2System
-      value: 
-      objectReference: {fileID: 1537547448}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cfdbe49248a1e049b947b1b061a7ac1, type: 3}
 --- !u!114 &19212414 stripped
@@ -379,21 +379,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8106420068749274206, guid: 4b07725b817864d47a1d24e05e98c66d,
-        type: 3}
-      propertyPath: attacks.weaponAttacks.Array.data[0].attackAnimation
-      value: Attack
-      objectReference: {fileID: 0}
-    - target: {fileID: 8106420068749274206, guid: 4b07725b817864d47a1d24e05e98c66d,
-        type: 3}
-      propertyPath: attacks.weaponAttacks.Array.data[1].attackAnimation
-      value: Fervent Anger
-      objectReference: {fileID: 0}
-    - target: {fileID: 8106420068749274206, guid: 4b07725b817864d47a1d24e05e98c66d,
-        type: 3}
-      propertyPath: attacks.weaponAttacks.Array.data[2].attackAnimation
-      value: Sure Strike
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b07725b817864d47a1d24e05e98c66d, type: 3}
