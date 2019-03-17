@@ -259,10 +259,35 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2385362138519764635, guid: 04cff0ecf2328624a830437bb6e5810a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5717507030672779763, guid: 04cff0ecf2328624a830437bb6e5810a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -10.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5717507030672779763, guid: 04cff0ecf2328624a830437bb6e5810a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 2134191791681662667, guid: 04cff0ecf2328624a830437bb6e5810a,
         type: 3}
       propertyPath: m_UiScaleMode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270948428036647815, guid: 04cff0ecf2328624a830437bb6e5810a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6638290757310041745, guid: 04cff0ecf2328624a830437bb6e5810a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3100531111066680124, guid: 04cff0ecf2328624a830437bb6e5810a,
         type: 3}
