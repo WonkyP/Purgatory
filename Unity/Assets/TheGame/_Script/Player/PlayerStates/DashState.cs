@@ -37,7 +37,6 @@ public class DashState : State
     public override void OnStateEnter()
     {
      
-        Debug.Log(dashDirection_.x);
         if (dashDirection_.x > 0) // dash Right
         {
             player.Anim.SetTrigger("Dodge Right");
