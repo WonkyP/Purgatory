@@ -18,6 +18,7 @@ TagManager:
   - SceneManager
   - GameOverCanvas1
   - GameOverCanvas2
+  - Canvas_PauseMenu
   layers:
   - Default
   - TransparentFX

@@ -13,6 +13,8 @@ public class MenuBehaviour : MonoBehaviour
     private GameObject PauseMenu;
 
     public Button ArenaButton;
+    public Button Pause_Resume;
+    public Button Pause_Quit;
 
     //[SerializeField]
     //private PlayerManager playerManager;
@@ -76,6 +78,22 @@ public class MenuBehaviour : MonoBehaviour
             player2System = GameObject.FindGameObjectWithTag("Player2System").GetComponent<PlayerSystem>();
 
             splitScreen = GameObject.FindGameObjectWithTag("SplitScreenSystem").GetComponent<SplitScreen>();
+
+            PauseMenu = GameObject.FindGameObjectWithTag("Canvas_PauseMenu").gameObject;
+            Pause_Resume = PauseMenu.gameObject.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).GetComponent<Button>();
+            Pause_Resume.onClick.AddListener(Resume);
+            Pause_Quit = PauseMenu.gameObject.transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).GetComponent<Button>();
+            Pause_Quit.onClick.AddListener(ExitGame);
+            PauseMenu.GetComponent<Canvas>().enabled = false;
+        }
+        if(scene.name == "Arena")
+        {
+            PauseMenu = GameObject.FindGameObjectWithTag("Canvas_PauseMenu").gameObject;
+            Pause_Resume = PauseMenu.gameObject.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).GetComponent<Button>();
+            Pause_Resume.onClick.AddListener(Resume);
+            Pause_Quit = PauseMenu.gameObject.transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).GetComponent<Button>();
+            Pause_Quit.onClick.AddListener(ExitGame);
+            PauseMenu.GetComponent<Canvas>().enabled = false;
         }
         
     }
@@ -149,7 +167,8 @@ public class MenuBehaviour : MonoBehaviour
 
     public void Resume()
     {
-        PauseMenu.SetActive(false);
+        PauseMenu.GetComponent<Canvas>().enabled = false;
+        Time.timeScale = 1;
     }
 
     public void ExitGame()
@@ -167,7 +186,9 @@ public class MenuBehaviour : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Escape))
         {
-            PauseMenu.SetActive(true);
+            Debug.Log("Pause menu activated!");
+            PauseMenu.GetComponent<Canvas>().enabled = true;
+            Time.timeScale = 0;
         }
     }
 }
