@@ -15,6 +15,9 @@ TagManager:
   - Player1System
   - Player2System
   - SplitScreenSystem
+  - SceneManager
+  - GameOverCanvas1
+  - GameOverCanvas2
   layers:
   - Default
   - TransparentFX

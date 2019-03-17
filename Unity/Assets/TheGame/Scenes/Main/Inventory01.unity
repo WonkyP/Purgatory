@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -122,6 +122,11 @@ PrefabInstance:
     - target: {fileID: 6680198956993526838, guid: 8cfdbe49248a1e049b947b1b061a7ac1,
         type: 3}
       propertyPath: m_Name
+      value: SceneManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680198956993526838, guid: 8cfdbe49248a1e049b947b1b061a7ac1,
+        type: 3}
+      propertyPath: m_TagString
       value: SceneManager
       objectReference: {fileID: 0}
     - target: {fileID: 6680198956993526836, guid: 8cfdbe49248a1e049b947b1b061a7ac1,
@@ -655,6 +660,36 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player1System
       objectReference: {fileID: 0}
+    - target: {fileID: 174158247894812032, guid: b956c7850cb7f12478d487b62d6e920d,
+        type: 3}
+      propertyPath: m_TagString
+      value: GameOverCanvas1
+      objectReference: {fileID: 0}
+    - target: {fileID: 145285775843097803, guid: b956c7850cb7f12478d487b62d6e920d,
+        type: 3}
+      propertyPath: panelPlayer1
+      value: 
+      objectReference: {fileID: 1192828600}
+    - target: {fileID: 145285775843097803, guid: b956c7850cb7f12478d487b62d6e920d,
+        type: 3}
+      propertyPath: panelPlayer2
+      value: 
+      objectReference: {fileID: 1958300781}
+    - target: {fileID: 4242913544388357308, guid: b956c7850cb7f12478d487b62d6e920d,
+        type: 3}
+      propertyPath: m_TagString
+      value: GameOverCanvas2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2959675717331496260, guid: b956c7850cb7f12478d487b62d6e920d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268192109746914424, guid: b956c7850cb7f12478d487b62d6e920d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b956c7850cb7f12478d487b62d6e920d, type: 3}
 --- !u!1 &504460495
@@ -876,6 +911,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c08ffe69f9bd79e4f8456349e89cb745, type: 3}
+--- !u!1 &1192828600 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 174158247894812032, guid: b956c7850cb7f12478d487b62d6e920d,
+    type: 3}
+  m_PrefabInstance: {fileID: 483622894}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1302316181 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6687037954165181935, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
@@ -1165,6 +1206,12 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1958300781 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4242913544388357308, guid: b956c7850cb7f12478d487b62d6e920d,
+    type: 3}
+  m_PrefabInstance: {fileID: 483622894}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1969534562 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8106420068749274206, guid: 4b07725b817864d47a1d24e05e98c66d,
@@ -1450,17 +1497,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7366008582931731378, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas_Player01_Inventory_Cards
+      objectReference: {fileID: 0}
+    - target: {fileID: 2495518410905321381, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 354d9b588e3ea144684da3f7da7c7679,
+        type: 3}
+    - target: {fileID: 3144795794147273725, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 157e66bc9fba7a74cb9b7e27412a1c0f,
+        type: 3}
+    - target: {fileID: 7366008584206772508, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 19212414}
     - target: {fileID: 7366008584362894558, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 5b66183575d331a48bdc290688553eb0,
         type: 3}
-    - target: {fileID: 7366008582931731378, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
-        type: 3}
-      propertyPath: m_Name
-      value: Canvas_Player01_Inventory_Cards
-      objectReference: {fileID: 0}
     - target: {fileID: 7366008582931731390, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1571,11 +1635,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 504460497}
-    - target: {fileID: 7366008584206772508, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 19212414}
     - target: {fileID: 1918933969, guid: 0a3546d309b9c4c4bad0974e6ecce0ff, type: 3}
       propertyPath: inventory
       value: 
@@ -1584,17 +1643,5 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 1440022259}
-    - target: {fileID: 2495518410905321381, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 354d9b588e3ea144684da3f7da7c7679,
-        type: 3}
-    - target: {fileID: 3144795794147273725, guid: 0a3546d309b9c4c4bad0974e6ecce0ff,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 157e66bc9fba7a74cb9b7e27412a1c0f,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a3546d309b9c4c4bad0974e6ecce0ff, type: 3}

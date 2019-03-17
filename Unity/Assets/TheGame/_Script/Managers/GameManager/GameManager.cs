@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,8 +17,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        panelPlayer1.SetActive(false);
-        panelPlayer2.SetActive(false);
+       
     }
 
 
@@ -30,22 +30,38 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable()
     {
+        SceneManager.sceneLoaded += OnSceneLoaded;
         panelPlayer1.SetActive(false);
         panelPlayer2.SetActive(false);
     }
 
-    private void OnLevelWasLoaded(int level)
+    // called second
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        panelPlayer1.SetActive(false);
-        panelPlayer2.SetActive(false);
+        Debug.Log("OnSceneLoaded: " + scene.name);
+        Debug.Log(mode);
+
+        // Assign references on Scene Load
+        if (scene.name == "Arena")
+        {
+            panelPlayer1.SetActive(false);
+            panelPlayer2.SetActive(false);
+        }
+
     }
 
     public void takeDamage(float currentLife, int player_Id)
     {
         if(currentLife <= 0)
         {
-            panelPlayer1.SetActive(true);
-            panelPlayer2.SetActive(true);
+
+             GameObject.FindGameObjectWithTag("SceneManager").GetComponent<MenuBehaviour>().GoToInventory();
+             SceneManager.LoadScene(1);
+
+            //Debug.Log("Current life is 0 or less!");
+            //panelPlayer1.SetActive(true);
+            //Debug.Log("Player1 panel activated");
+            //panelPlayer2.SetActive(true);
         }
     }
 }

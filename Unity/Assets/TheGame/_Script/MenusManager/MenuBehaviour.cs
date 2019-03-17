@@ -107,6 +107,7 @@ public class MenuBehaviour : MonoBehaviour
 
         splitScreen.MainHealthCanvas.SetActive(false);
 
+
     }
 
     public void GoToArena()
