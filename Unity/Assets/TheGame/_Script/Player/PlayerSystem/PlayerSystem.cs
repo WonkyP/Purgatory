@@ -21,7 +21,6 @@ public class PlayerSystem : MonoBehaviour
         player = transform.Find("Player").gameObject;
         PM = transform.Find("PlayerManager").gameObject;
 
-
         playerManager = PM.GetComponent<PlayerManager>();
     }
 

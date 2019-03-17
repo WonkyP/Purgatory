@@ -26,6 +26,8 @@ public class MenuBehaviour : MonoBehaviour
     [SerializeField]
     private SplitScreen splitScreen;
 
+    public InventoryManager inventoryManager;
+
     //------------------------------------------------------
     // TESTING: CAN BE DELETED
     Weapon_Attack atk1_2 = new Weapon_Attack("Attack 1_Combo2", 1, "Attack");
@@ -106,7 +108,7 @@ public class MenuBehaviour : MonoBehaviour
         player2System.Player.SetActive(false);
 
         splitScreen.MainHealthCanvas.SetActive(false);
-
+        inventoryManager.emptyPlayerCombos();
 
     }
 

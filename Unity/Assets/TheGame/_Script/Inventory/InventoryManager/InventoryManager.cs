@@ -44,7 +44,7 @@ public class InventoryManager : MonoBehaviour
         else if (instance != this)
             Destroy(gameObject);
 
-        emptyPlayerCombos();
+
     }
 
     private void Update()
