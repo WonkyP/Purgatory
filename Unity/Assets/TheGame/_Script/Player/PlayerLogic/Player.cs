@@ -59,6 +59,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+        
         anim = GetComponent<Animator>(); 
         inputManager = GetComponent<InputManager>();
         //attackInput1 = GetComponent<InputManager>().returnAttack_1_InputString();

@@ -23,24 +23,13 @@ public class InputManager : MonoBehaviour
 
 
     Player player;
-    // Start is called before the first frame update
 
-    private void Awake()
-    {
-
-    }
     void Start()
     {
         player = GetComponent<Player>();
         axisInputManager();
         dashInputManager();
         attackInputManager();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     ////public string returnDashInputString()
