@@ -120,6 +120,16 @@ ModelImporter:
     100228: Leaf_Sword
     100230: Weapon.R
     100232: Weapon.R_end
+    100234: Boots
+    100236: Hand.R.001
+    100238: Hand.R.001_end
+    100240: Helmet
+    100242: Padded_Vest
+    100244: Pauldron
+    100246: Pauldron_Strap
+    100248: Shield.L
+    100250: Shield.L_end
+    100252: Wooden_Shield
     400000: Armature
     400002: Clavicle.L
     400004: Clavicle.R
@@ -237,19 +247,42 @@ ModelImporter:
     400228: Leaf_Sword
     400230: Weapon.R
     400232: Weapon.R_end
+    400234: Boots
+    400236: Hand.R.001
+    400238: Hand.R.001_end
+    400240: Helmet
+    400242: Padded_Vest
+    400244: Pauldron
+    400246: Pauldron_Strap
+    400248: Shield.L
+    400250: Shield.L_end
+    400252: Wooden_Shield
     2100000: No Name
     2100002: Human
     2100004: Leaf_Sword
+    2100006: Wooden_Shield
+    2100008: Helmet
+    2100010: Pauldron_Strap
+    2100012: Pauldron
+    2100014: Padded_Vest
     2300000: Rapier01_Cube
     2300002: Human
     2300004: Leaf_Sword
+    2300006: Wooden_Shield
     3300000: Rapier01_Cube
     3300002: Human
     3300004: Leaf_Sword
+    3300006: Wooden_Shield
     4300000: Rapier01_Cube
     4300002: TheChosenOne
     4300004: Human
     4300006: Leaf_Sword
+    4300008: Wooden_Shield
+    4300010: Helmet
+    4300012: Pauldron_Strap
+    4300014: Pauldron
+    4300016: Padded_Vest
+    4300018: Boots
     7400000: Armature|Combat_Attack_FerventAnger
     7400002: Armature|Combat_Attack_FistedUpperCut
     7400004: Armature|Combat_Attack_LungeV1
@@ -271,6 +304,11 @@ ModelImporter:
     9500000: //RootNode
     13700000: TheChosenOne
     13700002: Human
+    13700004: Boots
+    13700006: Helmet
+    13700008: Padded_Vest
+    13700010: Pauldron
+    13700012: Pauldron_Strap
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
