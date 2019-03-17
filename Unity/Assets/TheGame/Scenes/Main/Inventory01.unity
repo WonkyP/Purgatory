@@ -782,6 +782,55 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &713684728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 713684730}
+  - component: {fileID: 713684729}
+  m_Layer: 0
+  m_Name: ComboTextsContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &713684729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713684728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c8fdefea210354ab275677b1a08406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comboSetNames1Texts:
+  - {fileID: 2000604761}
+  - {fileID: 546222928}
+  - {fileID: 1950510498}
+  - {fileID: 2056384134}
+  - {fileID: 1302316181}
+--- !u!4 &713684730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713684728}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &997245681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -813,27 +862,27 @@ PrefabInstance:
         type: 3}
       propertyPath: comboSetNames1.Array.data[0]
       value: 
-      objectReference: {fileID: 2000604761}
+      objectReference: {fileID: 0}
     - target: {fileID: 1122664355815791463, guid: c08ffe69f9bd79e4f8456349e89cb745,
         type: 3}
       propertyPath: comboSetNames1.Array.data[1]
       value: 
-      objectReference: {fileID: 546222928}
+      objectReference: {fileID: 0}
     - target: {fileID: 1122664355815791463, guid: c08ffe69f9bd79e4f8456349e89cb745,
         type: 3}
       propertyPath: comboSetNames1.Array.data[2]
       value: 
-      objectReference: {fileID: 1950510498}
+      objectReference: {fileID: 0}
     - target: {fileID: 1122664355815791463, guid: c08ffe69f9bd79e4f8456349e89cb745,
         type: 3}
       propertyPath: comboSetNames1.Array.data[3]
       value: 
-      objectReference: {fileID: 2056384134}
+      objectReference: {fileID: 0}
     - target: {fileID: 1122664355815791463, guid: c08ffe69f9bd79e4f8456349e89cb745,
         type: 3}
       propertyPath: comboSetNames1.Array.data[4]
       value: 
-      objectReference: {fileID: 1302316181}
+      objectReference: {fileID: 0}
     - target: {fileID: 1122664355815791463, guid: c08ffe69f9bd79e4f8456349e89cb745,
         type: 3}
       propertyPath: comboSetNames2.Array.data[0]
@@ -859,6 +908,11 @@ PrefabInstance:
       propertyPath: comboSetNames2.Array.data[4]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1122664355815791463, guid: c08ffe69f9bd79e4f8456349e89cb745,
+        type: 3}
+      propertyPath: textsContainer
+      value: 
+      objectReference: {fileID: 713684728}
     - target: {fileID: 1122664355815791462, guid: c08ffe69f9bd79e4f8456349e89cb745,
         type: 3}
       propertyPath: m_LocalPosition.x

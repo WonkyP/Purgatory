@@ -43,8 +43,7 @@ public class InventoryManager : MonoBehaviour
         }
         else if (instance != this)
             Destroy(gameObject);
-
-
+        comboSetNames1 = GameObject.Find("ComboTextsContainer").GetComponent<ComboTextsContainer>().ComboSetNames1Texts;
     }
 
     private void Update()
@@ -138,5 +137,10 @@ public class InventoryManager : MonoBehaviour
         cardNames.Clear();
         playerManager.ComboSystem.emptyCombos(playerManager.CurrentComboSet1, playerManager.ComboSet1);
         playerManager.ComboSystem.emptyCombos(playerManager.CurrentComboSet2, playerManager.ComboSet2);
+    }
+
+    public void FindComboTexts(List<Text> l)
+    {
+        comboSetNames1 = l;
     }
 }

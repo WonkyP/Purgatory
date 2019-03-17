@@ -68,6 +68,8 @@ public class MenuBehaviour : MonoBehaviour
             ArenaButton = GameObject.Find("Canvas_Player01_Inventory_Cards").transform.GetChild(1).GetComponent<Button>();
             ArenaButton.onClick.AddListener(GoToArena);
 
+  
+            inventoryManager.FindComboTexts(GameObject.Find("ComboTextsContainer").GetComponent<ComboTextsContainer>().ComboSetNames1Texts);
 
             player1System = GameObject.FindGameObjectWithTag("Player1System").GetComponent<PlayerSystem>();
             player2System = GameObject.FindGameObjectWithTag("Player2System").GetComponent<PlayerSystem>();
