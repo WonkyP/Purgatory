@@ -48,9 +48,18 @@ public class Player : MonoBehaviour
     //public string attackInput1;
     //public string attackInput2;
 
+    Animator anim;
+    public Animator Anim
+    {
+        get
+        {
+            return this.anim;
+        }
+    }
 
     private void Start()
     {
+        anim = GetComponent<Animator>(); 
         inputManager = GetComponent<InputManager>();
         //attackInput1 = GetComponent<InputManager>().returnAttack_1_InputString();
         //attackInput2 = GetComponent<InputManager>().returnAttack_2_InputString();

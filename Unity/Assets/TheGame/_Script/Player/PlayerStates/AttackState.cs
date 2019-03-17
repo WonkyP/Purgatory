@@ -30,7 +30,10 @@ public class AttackState : State
         input = inputToAttack;
     }
 
+    public void ComboInputReady()
+    {
 
+    }
     public override void Tick()
     {
         //if(!weaponDealDamage_.isAtacking())

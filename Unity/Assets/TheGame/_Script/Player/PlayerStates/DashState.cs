@@ -36,6 +36,17 @@ public class DashState : State
 
     public override void OnStateEnter()
     {
+     
+        Debug.Log(dashDirection_.x);
+        if (dashDirection_.x > 0) // dash Right
+        {
+            player.Anim.SetTrigger("Dodge Right");
+        }
+        else if (dashDirection_.x < 0) // dash Left
+        {
+            player.Anim.SetTrigger("Dodge Left");
+        }
+
         newPosition = player.transform.position;
         checkNewPosition();//check if the new position with the default sashdistance is reacheable with the default dodge distance
 
