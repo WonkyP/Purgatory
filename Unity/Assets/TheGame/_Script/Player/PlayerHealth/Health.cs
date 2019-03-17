@@ -52,7 +52,7 @@ public class Health : MonoBehaviour
         topHeadHealthBar.sizeDelta = new Vector2(health * 2, topHeadHealthBar.sizeDelta.y);
         mainHelathBar.sizeDelta = new Vector2(health * 2, topHeadHealthBar.sizeDelta.y);
 
-        GameManager.instance.takeDamage(health, playerManager.Player_id);
+        GameManager.instance.TakeDamage(health, playerManager.Player_id);
 
     }
 }

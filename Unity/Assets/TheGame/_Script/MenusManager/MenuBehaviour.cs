@@ -69,8 +69,9 @@ public class MenuBehaviour : MonoBehaviour
             ArenaButton.onClick.AddListener(GoToArena);
 
   
+            inventoryManager = GameObject.Find("Player1InventoryManager").GetComponent<InventoryManager>();
             inventoryManager.FindComboTexts(GameObject.Find("ComboTextsContainer").GetComponent<ComboTextsContainer>().ComboSetNames1Texts);
-
+            Debug.Log("Inventory Manager found!");
             player1System = GameObject.FindGameObjectWithTag("Player1System").GetComponent<PlayerSystem>();
             player2System = GameObject.FindGameObjectWithTag("Player2System").GetComponent<PlayerSystem>();
 

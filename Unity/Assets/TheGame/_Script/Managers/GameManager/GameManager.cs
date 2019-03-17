@@ -44,13 +44,13 @@ public class GameManager : MonoBehaviour
         // Assign references on Scene Load
         if (scene.name == "Arena")
         {
-            panelPlayer1.SetActive(false);
-            panelPlayer2.SetActive(false);
+            //panelPlayer1.SetActive(false);
+            //panelPlayer2.SetActive(false);
         }
 
     }
 
-    public void takeDamage(float currentLife, int player_Id)
+    public void TakeDamage(float currentLife, int player_Id)
     {
         if(currentLife <= 0)
         {
